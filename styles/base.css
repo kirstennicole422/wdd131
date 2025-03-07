@@ -1,0 +1,96 @@
+* {
+    --light-green: #86ac9f;
+    --dark-green: #293d36;
+    --white-green: #f3f7f5;
+    --gray-green: #dae7e0;
+}
+
+/* .arbutus-regular {
+    font-family: "Arbutus", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+    font-family:'Roboto',
+    'Arial Narrow',
+    Arial,
+    sans-serif;
+
+
+.roboto-regular {
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+} */
+
+nav a{
+    /* display: flex; */
+    /* flex-direction: column; */
+    justify-content: space-evenly;
+    text-decoration: none;
+    width: 100%;
+    flex-wrap: nowrap;
+    font-size: 20px;
+    font-family:'Arbutus','Times New Roman', Times, serif;
+    background-color:  var(--dark-green);
+    color: var(--gray-green);
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+nav {
+    display: flex;
+    text-align: center;
+}
+
+nav a:hover {
+    text-decoration:underline;
+    color: var(--white-green);
+}
+
+body {
+    font-family: 'Roboto','Arial Narrow',Arial,sans-serif;
+    font-weight: 200;
+}
+
+h1 {
+    font-family: 'Arbutus', 'Times New Roman', Times, serif;
+    font-weight: 400;
+}
+
+h2 {
+    font-family: 'Arbutus', 'Times New Roman', Times, serif;
+    font-weight: 400;
+    background-color: var(--white-green);
+    text-align: center;
+}
+
+h3 {
+    font-family: 'Roboto','Arial Narrow', Arial, sans-serif;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+    /* border-radius: 30px; */
+    margin: 100px auto;
+    width: 90%;
+}
+
+.card {
+    /* width: 45%; */
+    padding: 0 20px;
+    border: 2px solid var(--dark-green);
+    border-radius: 30px;
+    background-color: var(--white-green);
+}
+
+footer {
+    margin: auto;
+    text-align: center;
+
+}
