@@ -37,8 +37,6 @@ nav {
 }
 
 nav a{
-    /* display: flex; */
-    /* flex-direction: column; */
     justify-content: space-evenly;
     text-decoration: none;
     width: 100%;
@@ -67,7 +65,6 @@ h1 {
     text-align: center;
     background-color: var(--light-green);
     color: var(--dark-green);
-    /* padding-bottom: ; */
 
 }
 
@@ -92,7 +89,6 @@ main {
 }
 
 .card {
-    /* width: 45%; */
     padding: 0 20px;
     border: 2px solid var(--dark-green);
     border-radius: 30px;
@@ -101,8 +97,6 @@ main {
 
 .profile {
     max-width: 300px;
-    /* justify-content: end;
-    align-self: right; */
 }
 
 .flag {
@@ -121,17 +115,8 @@ footer p {
     color: var(--gray-green);
 }
 
-.lastModified {
-    color: yellow;
-}
-
-head p {
-    background-color: var(--dark-green);
-    color: yellow
-}
-
-.card ul li a:visited {
+/* .card ul li a:visited {
     color: var(--dark-green);
     font-size: 20px;
     te
-}
+} */
