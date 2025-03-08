@@ -33,7 +33,7 @@ nav a{
     text-decoration: none;
     width: 100%;
     flex-wrap: nowrap;
-    font-size: 20px;
+    font-size: 16px;
     font-family:'Arbutus','Times New Roman', Times, serif;
     background-color:  var(--dark-green);
     color: var(--gray-green);
@@ -92,5 +92,19 @@ main {
 footer {
     margin: auto;
     text-align: center;
+    background-color: var(--dark-green);
+    padding: 3px 0;
+}
 
+footer p {
+    color: var(--gray-green);
+}
+
+.lastModified {
+    color: yellow;
+}
+
+head p {
+    background-color: var(--dark-green);
+    color: blue
 }
