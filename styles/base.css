@@ -65,7 +65,7 @@ h1 {
     text-align: center;
     background-color: var(--light-green);
     color: var(--dark-green);
-
+    padding-top: 25px;
 }
 
 h2 {
