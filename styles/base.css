@@ -54,6 +54,10 @@ nav a:hover {
     color: var(--white-green);
 }
 
+nav a:visited {
+    color: var(--gray-green);
+}
+
 body {
     font-family: 'Roboto','Arial Narrow',Arial,sans-serif;
     font-weight: 200;
@@ -143,4 +147,5 @@ li a:visited {
 li a {
     font-size: 20px;
     padding: 10px;
+    color: var(--dark-green);
 }
