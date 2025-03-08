@@ -26,6 +26,16 @@
         "wdth" 100;
 } */
 
+header {
+    background-color: var(--light-green);
+    max-width: 100%;
+}
+
+nav {
+    display: flex;
+    text-align: center;
+}
+
 nav a{
     /* display: flex; */
     /* flex-direction: column; */
@@ -41,11 +51,6 @@ nav a{
     padding-bottom: 10px;
 }
 
-nav {
-    display: flex;
-    text-align: center;
-}
-
 nav a:hover {
     text-decoration:underline;
     color: var(--white-green);
@@ -59,6 +64,11 @@ body {
 h1 {
     font-family: 'Arbutus', 'Times New Roman', Times, serif;
     font-weight: 400;
+    text-align: center;
+    background-color: var(--light-green);
+    color: var(--dark-green);
+    /* padding-bottom: ; */
+
 }
 
 h2 {
@@ -117,5 +127,11 @@ footer p {
 
 head p {
     background-color: var(--dark-green);
-    color: blue
+    color: yellow
+}
+
+.card ul li a:visited {
+    color: var(--dark-green);
+    font-size: 20px;
+    te
 }
