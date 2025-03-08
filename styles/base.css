@@ -41,7 +41,7 @@ nav a{
     text-decoration: none;
     width: 100%;
     flex-wrap: nowrap;
-    font-size: 16px;
+    font-size: 20px;
     font-family:'Arbutus','Times New Roman', Times, serif;
     background-color:  var(--dark-green);
     color: var(--gray-green);
@@ -73,6 +73,7 @@ h2 {
     font-weight: 400;
     background-color: var(--white-green);
     text-align: center;
+    font-size: 25px;
 }
 
 h3 {
@@ -82,6 +83,7 @@ h3 {
     text-underline-offset: 10px;
     text-underline-position: left;
     padding-top: 55px;
+    font-size: 20px;
 }
 
 main {
@@ -97,22 +99,30 @@ main {
     border: 2px solid var(--dark-green);
     border-radius: 30px;
     background-color: var(--white-green);
+    /* display: ; */
     position: relative;
+    color: var(--dark-green);
+}
+
+.card p {
+    padding-right: 10px;
+    font-size: 20px;
 }
 
 .profile {
     max-width: 250px;
     max-height: 150px;
-    object-fit: cover;
     float: right;
     right: 20px;
-    padding-left: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-style: 20px solid var(--dark-green);
 }
 
 .flag {
     max-width: 200px;
     float: left;
-    padding-right: 10px;
+    padding-right: 15px;
 }
 
 footer {
@@ -125,12 +135,6 @@ footer {
 footer p {
     color: var(--gray-green);
 }
-
-/* .card ul li a:visited {
-    color: var(--dark-green);
-    font-size: 20px;
-    te
-} */
 
 li a:visited {
     color: var(--dark-green);
