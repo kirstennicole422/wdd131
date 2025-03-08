@@ -78,7 +78,7 @@ main {
     gap: 20px;
     /* border-radius: 30px; */
     margin: 100px auto;
-    width: 90%;
+    max-width: 90%;
 }
 
 .card {
@@ -87,6 +87,17 @@ main {
     border: 2px solid var(--dark-green);
     border-radius: 30px;
     background-color: var(--white-green);
+}
+
+.profile {
+    max-width: 300px;
+    justify-content: end;
+    align-self: right;
+}
+
+.flag {
+    max-width: 200px;
+    display: inline;
 }
 
 footer {
