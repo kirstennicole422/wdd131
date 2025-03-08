@@ -146,6 +146,10 @@ li a:visited {
 
 li a {
     font-size: 20px;
-    padding: 10px;
+    line-height: 40px;
+    color: var(--dark-green);
+}
+
+li a:link {
     color: var(--dark-green);
 }
