@@ -39,7 +39,7 @@ console.log(`Today is ${today}`)
 
 while (dayCount < numberDays) {
     let day = new Date()
-    dayNumber = daycount + today
+    dayNumber = dayCount + today
     day = //convert daynumber to day
     console.log(`The next day is ${day}`)
     dayCount++
