@@ -63,14 +63,14 @@ body {
     font-weight: 200;
 }
 
-h1 {
+div, h1 {
     font-family: 'Arbutus', 'Times New Roman', Times, serif;
     font-weight: 400;
-    /* font-size: ; */
+    font-size: 30px;
     text-align: center;
     background-color: var(--light-green);
     color: var(--dark-green);
-    padding-top: 25px;
+    padding: 25px;
 }
 
 h2 {
