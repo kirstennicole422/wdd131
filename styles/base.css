@@ -63,27 +63,14 @@ body {
     font-weight: 200;
 }
 
-#course-title {
-    font-family: 'Arbutus', 'Times New Roman', Times, serif;
-    /* font-weight: 400; */
-    /* text-align: center; */
-    /* justify-content: center; */
-    /* background-color: var(--light-green); */
-    /*color: var(--dark-green);*/
-    /* padding-top: 25px; */
-}
-
 h1 {
     font-family: 'Arbutus', 'Times New Roman', Times, serif;
     font-weight: 400;
+    /* font-size: ; */
     text-align: center;
     background-color: var(--light-green);
     color: var(--dark-green);
-    grid-column: 1/3;
-    justify-content: center;
-    text-align: center;
-    padding: 10px 0px;
-    border-radius: 30px;
+    padding-top: 25px;
 }
 
 h2 {
@@ -110,6 +97,14 @@ main {
     gap: 20px;
     margin: 100px auto;
     max-width: 90%;
+}
+
+.name {
+    grid-column: 1/3;
+    justify-content: center;
+    text-align: center;
+    padding: 10px 0px;
+    border-radius: 30px;
 }
 
 .card {
