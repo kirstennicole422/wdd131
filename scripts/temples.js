@@ -6,3 +6,16 @@ currentyear.innerHTML = `${today.getFullYear()} `;
 
 lastModified.innerHTML = `Last modification: ${document.lastModified}`;
 
+document.addEventListener("DOMContentLoaded", () => {
+    const openMenu = document.querySelector(".dropdown");
+    const navGroup = document.querySelector(".nav");
+    openMenu.addEventListener("click", () => {
+        navGroup.classList.toggle("open");
+        if (navGroup.classList.contains("open")) {
+            openMenu.textContent = "❌";
+        }
+        else {
+            openMenu.textContent = "🍔☰";
+        }
+    });
+});

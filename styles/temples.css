@@ -13,27 +13,12 @@
 }
 
 nav {
-    display: flex;
-    justify-content: space-around;
+    display: none;
 }
 
 main {
     margin: 0 auto;
     max-width: 1200px;
-}
-
-a:visited, a:link {
-    color: var(--deep-purple);
-    text-decoration: none;
-}
-
-a:active {
-    text-decoration: solid;
-    }
-
-a:hover{
-    text-decoration: underline;
-    color: var(--burnt-orange);
 }
 
 h1, h2{
@@ -43,7 +28,6 @@ h1, h2{
 h1 {
     font-size: var(--large-font);
 }
-
 
 .images{
     display: grid;
