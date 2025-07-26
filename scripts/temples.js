@@ -8,14 +8,14 @@ lastModified.innerHTML = `Last modification: ${document.lastModified}`;
 
 document.addEventListener("DOMContentLoaded", () => {
     const openMenu = document.querySelector(".dropdown");
-    const navGroup = document.querySelector(".nav");
+    const navGroup = document.querySelector(".navigation");
     openMenu.addEventListener("click", () => {
         navGroup.classList.toggle("open");
         if (navGroup.classList.contains("open")) {
             openMenu.textContent = "❌";
         }
         else {
-            openMenu.textContent = "🍔☰";
+            openMenu.textContent = "☰";
         }
     });
 });

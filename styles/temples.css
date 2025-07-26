@@ -12,8 +12,39 @@
     color: var(--deep-purple)
 }
 
+.dropdown {
+    font-size: var(--medium-font);
+}
+
 nav {
     display: none;
+}
+
+nav.open {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background-color: var(--cream);
+    padding: 10px;
+    border: 3px solid var(--deep-purple);
+}
+
+a {
+    margin: 10px;
+}
+
+a:visited, a:link {
+    color: var(--deep-purple);
+    text-decoration: none;
+}
+
+a:active {
+    text-decoration: solid;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: var(--burnt-orange);
 }
 
 main {
