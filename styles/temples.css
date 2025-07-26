@@ -27,9 +27,11 @@ a:visited, a:link {
     color: var(--deep-purple);
     text-decoration: none;
 }
+
 a:active {
     text-decoration: solid;
     }
+
 a:hover{
     text-decoration: underline;
     color: var(--burnt-orange);
