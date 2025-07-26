@@ -22,7 +22,7 @@ nav {
 main {
     /* justify-content: center;  */
     margin: 0 auto;
-    max-width: 100px;
+    max-width: 1200px;
 }
 
 a:visited, a:link {
@@ -40,9 +40,24 @@ h1, h2{
     color: var(--deep-purple);
 }
 
-figure{
+.images{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    
+    grid-template-columns:1fr;
+}
 
+figure img{ 
+    width: 100%;
+    height: auto;
+}
+
+figure {
+    margin: 10px;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    color: var(--deep-purple);
+    font-size: var(--small-font);
+    font-family:;
 }
