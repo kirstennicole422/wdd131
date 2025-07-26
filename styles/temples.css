@@ -3,26 +3,28 @@
     --deep-purple: #331110;
     --cream: #fff3d6;
     --yellow: #fdd872;
-    --small-font: 16px;
-    --medium-font: 22px;
-    --large-font: 30px;
+    --small-font: 18px;
+    --medium-font: 28px;
+    --large-font: 38px;
     background-color: var(--cream);
     font-family: Delius, Arial, sans-serif;
+    font-size: var(--medium-font);
+    color: var(--deep-purple)
 }
-
 
 nav {
     display: flex;
     justify-content: space-around;
     font-size: var(--medium-font);
 }
+
 main {
     margin: 0 auto;
     max-width: 1200px;
 }
 
 a:visited, a:link {
-    color: var(--burnt-orange);
+    color: var(--deep-purple);
     text-decoration: none;
 }
 a:active {
@@ -30,16 +32,25 @@ a:active {
     }
 a:hover{
     text-decoration: underline;
+    color: var(--burnt-orange);
 }
 
 h1, h2{
-    color: var(--deep-purple);
     justify-self: center;
+}
+
+h1 {
+    font-size: var(--large-font);
+}
+
+h2 {
+    font-size: var(--medium-font)
 }
 
 .images{
     display: grid;
-    grid-template-columns:1fr;
+    grid-template-columns: 1fr;
+    font-size: var(--small-font);
 }
 
 figure img{ 
@@ -54,6 +65,5 @@ figure {
 
 footer {
     text-align: center;
-    color: var(--deep-purple);
     font-size: var(--small-font);
 }
