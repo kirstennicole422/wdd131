@@ -8,12 +8,14 @@
     --large-font: 38px;
     background-color: var(--cream);
     font-family: Delius, Arial, sans-serif;
-    font-size: var(--medium-font);
     color: var(--deep-purple)
 }
 
 .dropdown {
     font-size: var(--medium-font);
+    color: var(--deep-purple);
+    background-color: var(--cream);
+    border: none;
 }
 
 nav {
@@ -54,9 +56,6 @@ main {
 
 h1, h2{
     justify-self: center;
-}
-
-h1 {
     font-size: var(--large-font);
 }
 
