@@ -10,20 +10,17 @@
     font-family: Delius, Arial, sans-serif;
 }
 
-h1 {
-    background-color: var(--deep-green);
-    color: var(--pale-blue);
-}
-
 .data, .weather {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 10px;
-
+    color: var(--deep-green);
+    font-size: var(--small-font);
 }
 
 .l {
     justify-self: end;
+    font-weight: bold;
 }
 
 h1, footer {
@@ -31,7 +28,10 @@ h1, footer {
     color: var(--pale-blue);
     padding: 20px;
     text-align: center;
-    
+}
+
+footer {
+    font-size: var(--small-font);
 }
 
 h1 {
@@ -42,9 +42,4 @@ h2 {
     color: var(--deep-green);
     text-align: center;
     font-size: var(--medium-font);
-}
-
-p {
-    font-size: var(--small-font);
-    color: var(--deep-green);
 }
