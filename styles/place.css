@@ -1,27 +1,50 @@
 :root {
-    --burnt-orange: #b24b27;
-    --deep-purple: #331110;
-    --cream: #fff3d6;
-    --yellow: #fdd872;
+    --med-green: #728821;
+    --deep-green: #2D362B;
+    --pale-blue: #F0FFFF;
+    --blue: #7DAEEB;
     --small-font: 18px;
     --medium-font: 28px;
     --large-font: 38px;
-    background-color: var(--cream);
+    background-color: var(--pale-blue);
     font-family: Delius, Arial, sans-serif;
-    color: var(--deep-purple)
 }
 
 h1 {
-    background-color: var (--deep-purple);
-    color: var(--cream);
+    background-color: var(--deep-green);
+    color: var(--pale-blue);
 }
 
 .data, .weather {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 10px;
+
 }
 
 .l {
     justify-self: end;
+}
+
+h1, footer {
+    background-color: var(--deep-green);
+    color: var(--pale-blue);
+    padding: 20px;
+    text-align: center;
+    
+}
+
+h1 {
+    font-size: var(--large-font);
+}
+
+h2 {
+    color: var(--deep-green);
+    text-align: center;
+    font-size: var(--medium-font);
+}
+
+p {
+    font-size: var(--small-font);
+    color: var(--deep-green);
 }
