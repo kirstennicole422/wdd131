@@ -1,3 +1,21 @@
+:root {
+    --burnt-orange: #b24b27;
+    --deep-purple: #331110;
+    --cream: #fff3d6;
+    --yellow: #fdd872;
+    --small-font: 18px;
+    --medium-font: 28px;
+    --large-font: 38px;
+    background-color: var(--cream);
+    font-family: Delius, Arial, sans-serif;
+    color: var(--deep-purple)
+}
+
+h1 {
+    background-color: var (--deep-purple);
+    color: var(--cream);
+}
+
 .data, .weather {
     display: grid;
     grid-template-columns: 1fr 1fr;
