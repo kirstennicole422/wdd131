@@ -1,11 +1,13 @@
 :root {
     --med-green: #728821;
-    --deep-green: #2D362B;
+    --deep-green: #415700;
     --pale-blue: #F0FFFF;
     --blue: #7DAEEB;
     --small-font: 18px;
     --medium-font: 28px;
     --large-font: 38px;
+    font-size: var(--small-font);
+    color: var(--deep-green);
     background-color: var(--pale-blue);
     font-family: Delius, Arial, sans-serif;
 }
