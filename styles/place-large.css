@@ -1,0 +1,61 @@
+@media only screen and (min-width: 850px) {
+
+    .hero-box {
+        position: relative;
+    }
+
+    .data-box, .weather-box {
+        width: 30%;
+        max-width: 500px;
+        position: absolute;
+        border: orange 4px solid;
+    }
+    
+    .data-box {
+        max-height: 100%;
+        min-height: 400px;
+        /* position: absolute;  */
+        top: 30px;
+        left: 40px;
+        /* bottom: 20px; */
+    }
+
+    .weather-box { 
+        right: 1rem;
+        bottom: 1rem;
+    }
+    
+
+    .data, .weather {
+        background-color: aqua;
+        /* border: green 10px solid; */
+        padding-top: 70px;
+    }
+    
+
+    .data {
+        bottom: 20px;
+    }
+
+    h2 {
+        position: absolute;
+        border: var(--deep-green) 4px solid;
+        background-color: var(--pale-blue);
+        /* top: 20px; */
+        left: -1.5rem;
+        /* right: 7.5rem; */
+        width: 75%; 
+        /* margin: 10px;;   */
+        /* top: 130px;  */
+    }
+
+    .hero {
+        /* position: absolute; */
+        /* color: red; */
+        z-index: -1;
+    }
+
+    /* footer {
+        position: absolute;
+    } */
+}
