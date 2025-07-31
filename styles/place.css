@@ -55,3 +55,22 @@ h2 {
 p {
     margin: 5px;
 }
+
+.weather-icon {
+    /* justify-self: center;
+    align-items: center;
+    align-self: center; */
+    display: block;
+    /* margin: 10 auto; */
+    margin: 0 auto 10px;
+    width: 75px;
+    height: auto;
+}
+
+.weather-head {
+    margin: 50px 10px 0 0
+}
+
+.weather-box {
+    padding: 0 0 20px 0;
+}
