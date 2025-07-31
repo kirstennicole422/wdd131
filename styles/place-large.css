@@ -18,8 +18,8 @@
     }
     
     .data-box {
-        top: 30px;
-        left: 40px;
+        top: 1rem;
+        left: 1rem;
     }
 
     .weather-box { 
@@ -47,7 +47,6 @@
     }
 
     .weather-head::after {
-        content: " ⛅" ;
-    }
+        content: " ⛅" ;    }
   
 }   
