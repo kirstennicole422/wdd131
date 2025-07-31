@@ -3,7 +3,7 @@
         --med-green: #728821;
         --deep-green: #415700;
         --pale-blue: #F0FFFF;
-        --clear-blue: #F0FFFF95;
+        --clear-blue: #F0FFFFCC;
         --blue: #7DAEEB;
     }
 
@@ -15,7 +15,6 @@
         width: 30%;
         max-width: 500px;
         position: absolute;
-        /* border: var(--med-green) 4px solid; */
     }
     
     .data-box {
