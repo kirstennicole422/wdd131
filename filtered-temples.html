@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="description" content="Temple Album for WDD 131">
+    <meta name="author" content="Kirsten Stockwell">
+    <title>Temple Album</title>
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <link rel="stylesheet" href="styles/filtered-temples-large.css">
+    <script src="scripts/filtered-temples.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Delius&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="images/church.png">
+
+</head>
+
+<body>
+    <header>
+        <h1>Temple Album</h1>
+        <button class = "dropdown">☰</button>
+        <nav class = "navigation">
+            <a href="#">Home</a>
+            <a href="#">Old</a>
+            <a href="#">New</a>
+            <a href="#">Large</a>
+            <a href="#">Small</a>
+        </nav>
+    </header>
+    <main>
+        <div id="temple-container"></div>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span>| Kirsten Stockwell | Colorado, USA</p>
+        <p><span id="lastModified"></span></p>
+    </footer>
+</body>
+
+</html>
