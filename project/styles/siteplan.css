@@ -1,0 +1,37 @@
+:root {
+    --med-green: #728821;
+    --deep-green: #415700;
+    --pale-blue: #F0FFFF;
+    --blue: #417cc4;
+
+    font-family: "Roboto", Arial, sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+    background-color: var(--deep-green);
+    color: var(--pale-blue);
+    text-align: center;
+}
+
+h1 {
+    color: var(--pale-blue);
+    text-align: center;
+    font-style: italic;
+}
+
+div {
+    color: var(--pale-blue);
+    background-color: var(--blue);
+    padding: 10px;
+    border: 2px solid var(--pale-blue);
+    margin: 10px;
+}
+
+ul, li, p{
+    text-align: left;
+}
+
+img {
+    border: 2px solid var(--pale-blue)
+}
