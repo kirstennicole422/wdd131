@@ -180,21 +180,42 @@ let testVariable = "test";
             
             // populateCard();
             // //created card outside of div
-            
-function createCard() {
+function createCard(i) {
     const card = document.createElement("card");
-    let name = temples[0].templeName;
-    let location = temples[0].location;
+    let name = document.createElement("name");
+    card.appendChild(name);
+    document.getElementById("temple-container").appendChild(card);
+          
+}
+            
+            
+function populateCard(i) {
+    const card = document.createElement("card");
+    // let name = temples[0].templeName;
+    let name = document.createElement("h2");
+    // name
+
+    let location = temples[i].location;
     let dedicated = temples[0].dedicated;
-    let area = temples[0].area;
-    let imageUrl = temples[0].imageUrl;
-    card.innerHTML = ` ${name} location: ${location} dedicated: ${dedicated} words`;
+    // let area = temples[0].area;
+    // let imageUrl = temples[0].imageUrl;
+    // card.innerHTML = ` ${name} location: ${location} dedicated: ${dedicated} size: ${area}`;
     // card.innerHTML = "card words";
-    card.append(area);
+    // templeContainer.appendChild(`NAME: ${name}`);
+    // const templeContainer = document.getElementById("#temple-container");
+    // templeContainer.appendChild(card);
+
+    card.append(`LOCATION: ${location}`);
+    // card.append(`DEDICATED: ${dedicated}`);
+    // card.append(`SIZE: ${area}`);
     card.append(name);
     document.body.appendChild(card);
 }
             
-// createCard();
+for (let i = 0; i < temples.length; i++) {
+    createCard(i)
+    populateCard(i);
+}
+    // temples.forEach(createCard(temple))
 
-temples.forEach(createCard (temples));
+// createCard();
