@@ -60,11 +60,11 @@ h1, h2{
     font-size: var(--large-font);
 }
 
-.images{
+/* .images{
     display: grid;
     grid-template-columns: 1fr;
     font-size: var(--small-font);
-}
+} */
 
 figure img{ 
     width: 100%;
@@ -87,8 +87,17 @@ div {
 
 }
 
-card {
+
+.temple-container {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: 10px;
+}
+
+section {
     background-color: #b24b27;
     padding: 20px;
+    margin: 20px;
     border: 2px solid black;
 }

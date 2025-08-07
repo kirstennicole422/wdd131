@@ -180,17 +180,33 @@ let testVariable = "test";
             
             // populateCard();
             // //created card outside of div
-function createCard(i) {
-    const card = document.createElement("card");
-    let name = document.createElement("name");
+function createCard(i, populateCard) {
+    const card = document.createElement("section");
+    let name = document.createElement("h2");
+    let location = document.createElement("p");
+    let dedicated = document.createElement("p");
+    let area = document.createElement("p");
+    let img = document.createElement("img");
+    img.src = temples[i].imageUrl;
+    img.alt = `Image of ${temples[i].templeName}`;
+    img.loading = "lazy";
     card.appendChild(name);
+    card.appendChild(location);
+    card.appendChild(dedicated)
+    card.appendChild(area);
+    card.appendChild(img);
     document.getElementById("temple-container").appendChild(card);
-          
-}
+    // populateCard(i);   
+    name.append(temples[i].templeName);
+    location.append(`Location: ${temples[i].location}`);
+    dedicated.append(`Dedicated: ${temples[i].dedicated}`)
+    area.append(`Area: ${temples[i].area} sq ft`)
+
+    // card.append("more words");
+}   
             
-            
-function populateCard(i) {
-    const card = document.createElement("card");
+function populateCardBad(i) {
+    const card = document.querySelector("card");
     // let name = temples[0].templeName;
     let name = document.createElement("h2");
     // name
@@ -213,8 +229,8 @@ function populateCard(i) {
 }
             
 for (let i = 0; i < temples.length; i++) {
-    createCard(i)
-    populateCard(i);
+    createCard(i);
+    // populateCard(i);
 }
     // temples.forEach(createCard(temple))
 
