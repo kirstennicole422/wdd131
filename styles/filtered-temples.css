@@ -80,3 +80,9 @@ footer {
     text-align: center;
     font-size: var(--small-font);
 }
+
+div {
+    /* background-color: red; */
+    border: 2px solid black;
+
+}

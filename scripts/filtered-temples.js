@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 });
-
+const food = ["fish", "apples", "bananas", "oranges"];
 const temples = [
     {
         templeName: "Aba Nigeria",
@@ -100,15 +100,101 @@ const temples = [
             "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/jordan-river-utah/400x250/CWD_f5579d41-7344-4498-a589-4017ba5fcc91.jpg"    }
 ];
 
-function createCard() {
-    let name = temples.templeName;
-    let location = temples.location;
-    let dedicated = temples.dedicated;
-    let area = temples.area;
-    let imageUrl = temples.imageUrl;
-};
+// function createCard() {
+//     let name = temples.templeName;
+//     let location = temples.location;
+//     let dedicated = temples.dedicated;
+//     let area = temples.area;
+//     let imageUrl = temples.imageUrl;
+// };
+
+// const newDiv = document.createElement("temple-card");
+// const words = document.createTextNode('words to display');
+// newDiv.appendChild(words);
+// const element = document.getElementById("temple-container");
+// // element.appendChild(card);
+// document.body.insertBefore(newDiv, element);
+
+// document.body.onload = addElement;
+
+// function addElement() {
+//     // create a new div element
+//     const newDiv = document.createElement("div");
+
+//     // and give it some content
+//     const newContent = document.createTextNode("Hi there and greetings!");
+
+//     // add the text node to the newly created div
+//     newDiv.appendChild(newContent);
+
+//     // add the newly created element and its content into the DOM
+//     const currentDiv = document.getElementById("temple-container");
+//     document.body.insertBefore(newDiv, currentDiv);
+// }
+
+let testVariable = "test";
 
 
-temples.forEach(createCard(val)) {
+// document.querySelector("#temple-container").innerHTML = `words ${testVariable} ${temples[0].templeName}`;
+
+
+// function createCard(temples, populateCard) {
+
+
+//populate card
+
+// function populateCard(value, index, array) {
+    // document.getElementById("temple-container").innerHTML = `${temples[index].templeName} ${temples[index].location} ${temples[index].dedicated} ${temples[index].area}`;
+    // document.getElementById("temple-container").innerHTML = `${templeName} ${location} ${dedicated} ${area}`;
     
-};
+    // }
+    
+    // temples.forEach
+    
+    //     (temple => document.getElementById("temple-container").innerHTML = `${temples[index].templeName} ${temples[index].location} ${temples[index].dedicated} ${temples[index].area}`);
+    
+    // temples.forEach(temple);
+    // const 
+    
+    // populateCard();// // let templeName = "erte";
+    // document.querySelector("card").innerHTML = `words ${testVariable} ${temples[i].templeName} ${temples[i].location} ${temples[i].dedicated}`;
+    
+    // for (let data in temple) {
+        //     data = temple[data];
+        // }
+        
+        // document.querySelector("temple-container").innerHTML = temple['templeName;
+        // return templeName;;
+        // }
+        // function populateCard() { 
+            //     document.getElementById(card)
+            
+            //     .innerHTML = "I am nested";
+            
+            // }
+            
+            
+            // temples.forEach(createCard);
+            // document.getElementById("temple-container").innerHTML = "I have changed!";
+            
+            
+            // populateCard();
+            // //created card outside of div
+            
+function createCard() {
+    const card = document.createElement("card");
+    let name = temples[0].templeName;
+    let location = temples[0].location;
+    let dedicated = temples[0].dedicated;
+    let area = temples[0].area;
+    let imageUrl = temples[0].imageUrl;
+    card.innerHTML = ` ${name} location: ${location} dedicated: ${dedicated} words`;
+    // card.innerHTML = "card words";
+    card.append(area);
+    card.append(name);
+    document.body.appendChild(card);
+}
+            
+// createCard();
+
+temples.forEach(createCard (temples));
