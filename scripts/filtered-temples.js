@@ -181,7 +181,8 @@ let testVariable = "test";
             // populateCard();
             // //created card outside of div
 function createCard(i, populateCard) {
-    const card = document.createElement("section");
+    const card = document.createElement("card");
+    document.getElementById("temple-container").appendChild(card);
     let name = document.createElement("h2");
     let location = document.createElement("p");
     let dedicated = document.createElement("p");

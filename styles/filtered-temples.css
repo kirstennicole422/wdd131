@@ -87,17 +87,17 @@ div {
 
 }
 
-
 .temple-container {
     display: grid;
+    width: 1vp;
     gap: 20px;
-    grid-template-columns: 1fr 1fr 1fr;
-
+    grid-template-columns: 1fr;
 }
 
-section {
+card {
     background-color: #b24b27;
     padding: 20px;
     margin: 20px;
     border: 2px solid black;
+    /* width: 10%; */
 }

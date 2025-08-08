@@ -6,13 +6,21 @@
         font-size: var(--medium-font);
     }
 
-    .images {
-        grid-template-columns: 1fr 1fr 1fr;
-    }
-
-    
     .dropdown {
         display: none;
     }
+        
+    .temple-container {
+        display: grid;
+        width: 1vp;
+        gap: 20px;
+        grid-template-columns: 1fr 1fr 1fr;
+        
+    }
+
+    card {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    
 
 }
