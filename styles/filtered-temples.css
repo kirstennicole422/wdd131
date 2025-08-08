@@ -60,20 +60,8 @@ h1, h2{
     font-size: var(--large-font);
 }
 
-/* .images{
-    display: grid;
-    grid-template-columns: 1fr;
-    font-size: var(--small-font);
-} */
-
-figure img{ 
-    width: 100%;
-    height: auto;
-}
-
-figure {
-    margin: 10px;
-    text-align: center;
+h2{
+    font-size: var(--medium-font);
 }
 
 footer {
@@ -82,22 +70,18 @@ footer {
 }
 
 div {
-    /* background-color: red; */
     border: 2px solid black;
-
 }
 
 .temple-container {
     display: grid;
     width: 1vp;
-    gap: 20px;
+    gap: 10px;
     grid-template-columns: 1fr;
 }
 
 card {
     background-color: #b24b27;
     padding: 20px;
-    margin: 20px;
     border: 2px solid black;
-    /* width: 10%; */
 }
