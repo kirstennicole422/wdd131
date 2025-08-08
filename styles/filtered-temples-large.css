@@ -13,12 +13,4 @@
     .temple-container {
         grid-template-columns: 1fr 1fr 1fr;
     }
-
-    card {
-        /* align-content: center; */
-    
-    }
-
-    
-
 }
