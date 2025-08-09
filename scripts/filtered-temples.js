@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 });
-const food = ["fish", "apples", "bananas", "oranges"];
+
 const temples = [
     {
         templeName: "Aba Nigeria",
@@ -100,138 +100,50 @@ const temples = [
             "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/jordan-river-utah/400x250/CWD_f5579d41-7344-4498-a589-4017ba5fcc91.jpg"    }
 ];
 
-// function createCard() {
-//     let name = temples.templeName;
-//     let location = temples.location;
-//     let dedicated = temples.dedicated;
-//     let area = temples.area;
-//     let imageUrl = temples.imageUrl;
-// };
+// let testVariable = "test";
 
-// const newDiv = document.createElement("temple-card");
-// const words = document.createTextNode('words to display');
-// newDiv.appendChild(words);
-// const element = document.getElementById("temple-container");
-// // element.appendChild(card);
-// document.body.insertBefore(newDiv, element);
+// const oldFilter = document.querySelector("#old");
+// // const newFilter = document.querySelector("#new");
+// // const largeFilter = document.querySelector("#large");
+// // const smallFilter = document.querySelector("#small");
 
-// document.body.onload = addElement;
 
-// function addElement() {
-//     // create a new div element
-//     const newDiv = document.createElement("div");
-
-//     // and give it some content
-//     const newContent = document.createTextNode("Hi there and greetings!");
-
-//     // add the text node to the newly created div
-//     newDiv.appendChild(newContent);
-
-//     // add the newly created element and its content into the DOM
-//     const currentDiv = document.getElementById("temple-container");
-//     document.body.insertBefore(newDiv, currentDiv);
+// function checkOld(temples) {
+//     return (temple.dedicated < 1900);
 // }
 
-let testVariable = "test";
+// function createOldArray() {
+//     oldArray = temples.filter(checkOld);
+//     return OldArray;
+// }
 
+// oldFilter.addEventListener("click", createOldArray);
 
-// document.querySelector("#temple-container").innerHTML = `words ${testVariable} ${temples[0].templeName}`;
-
-
-// function createCard(temples, populateCard) {
-
-
-//populate card
-
-// function populateCard(value, index, array) {
-    // document.getElementById("temple-container").innerHTML = `${temples[index].templeName} ${temples[index].location} ${temples[index].dedicated} ${temples[index].area}`;
-    // document.getElementById("temple-container").innerHTML = `${templeName} ${location} ${dedicated} ${area}`;
-    
-    // }
-    
-    // temples.forEach
-    
-    //     (temple => document.getElementById("temple-container").innerHTML = `${temples[index].templeName} ${temples[index].location} ${temples[index].dedicated} ${temples[index].area}`);
-    
-    // temples.forEach(temple);
-    // const 
-    
-    // populateCard();// // let templeName = "erte";
-    // document.querySelector("card").innerHTML = `words ${testVariable} ${temples[i].templeName} ${temples[i].location} ${temples[i].dedicated}`;
-    
-    // for (let data in temple) {
-        //     data = temple[data];
-        // }
-        
-        // document.querySelector("temple-container").innerHTML = temple['templeName;
-        // return templeName;;
-        // }
-        // function populateCard() { 
-            //     document.getElementById(card)
-            
-            //     .innerHTML = "I am nested";
-            
-            // }
-            
-            
-            // temples.forEach(createCard);
-            // document.getElementById("temple-container").innerHTML = "I have changed!";
-            
-            
-            // populateCard();
-            // //created card outside of div
-function createCard(i, populateCard) {
-    const card = document.createElement("section");
-    let name = document.createElement("h2");
-    let location = document.createElement("p");
-    let dedicated = document.createElement("p");
-    let area = document.createElement("p");
-    let img = document.createElement("img");
-    img.src = temples[i].imageUrl;
-    img.alt = `Image of ${temples[i].templeName}`;
-    img.loading = "lazy";
-    card.appendChild(name);
-    card.appendChild(location);
-    card.appendChild(dedicated)
-    card.appendChild(area);
-    card.appendChild(img);
-    document.getElementById("temple-container").appendChild(card);
-    // populateCard(i);   
-    name.append(temples[i].templeName);
-    location.append(`Location: ${temples[i].location}`);
-    dedicated.append(`Dedicated: ${temples[i].dedicated}`)
-    area.append(`Area: ${temples[i].area} sq ft`)
-
-    // card.append("more words");
-}   
-            
-function populateCardBad(i) {
-    const card = document.querySelector("card");
-    // let name = temples[0].templeName;
-    let name = document.createElement("h2");
-    // name
-
-    let location = temples[i].location;
-    let dedicated = temples[0].dedicated;
-    // let area = temples[0].area;
-    // let imageUrl = temples[0].imageUrl;
-    // card.innerHTML = ` ${name} location: ${location} dedicated: ${dedicated} size: ${area}`;
-    // card.innerHTML = "card words";
-    // templeContainer.appendChild(`NAME: ${name}`);
-    // const templeContainer = document.getElementById("#temple-container");
-    // templeContainer.appendChild(card);
-
-    card.append(`LOCATION: ${location}`);
-    // card.append(`DEDICATED: ${dedicated}`);
-    // card.append(`SIZE: ${area}`);
-    card.append(name);
-    document.body.appendChild(card);
+function createCard(temples) {
+    for (let i = 0; i < temples.length; i++) {
+        const card = document.createElement("card");
+        document.getElementById("temple-container").appendChild(card);
+        let name = document.createElement("h2");
+        let location = document.createElement("p");
+        let dedicated = document.createElement("p");
+        let area = document.createElement("p");
+        let img = document.createElement("img");
+        img.src = temples[i].imageUrl;
+        img.alt = `Image of ${temples[i].templeName}`;
+        img.setAttribute('loading', "lazy");
+        card.appendChild(name);
+        card.appendChild(location);
+        card.appendChild(dedicated)
+        card.appendChild(area);
+        card.appendChild(img);
+        document.getElementById("temple-container").appendChild(card);
+        name.append(temples[i].templeName);
+        location.append(`Location: ${temples[i].location}`);
+        dedicated.append(`Dedicated: ${temples[i].dedicated}`)
+        area.append(`Area: ${temples[i].area} sq ft`)
+    }
 }
             
-for (let i = 0; i < temples.length; i++) {
-    createCard(i);
-    // populateCard(i);
-}
-    // temples.forEach(createCard(temple))
+ 
+createCard(temples);
 
-// createCard();

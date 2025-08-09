@@ -6,13 +6,11 @@
         font-size: var(--medium-font);
     }
 
-    .images {
-        grid-template-columns: 1fr 1fr 1fr;
-    }
-
-    
     .dropdown {
         display: none;
     }
-
+        
+    .temple-container {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
 }
