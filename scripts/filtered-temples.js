@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 });
-const food = ["fish", "apples", "bananas", "oranges"];
+
 const temples = [
     {
         templeName: "Aba Nigeria",
@@ -100,31 +100,50 @@ const temples = [
             "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/jordan-river-utah/400x250/CWD_f5579d41-7344-4498-a589-4017ba5fcc91.jpg"    }
 ];
 
-let testVariable = "test";
+// let testVariable = "test";
 
-function createCard(i) {
-    const card = document.createElement("card");
-    document.getElementById("temple-container").appendChild(card);
-    let name = document.createElement("h2");
-    let location = document.createElement("p");
-    let dedicated = document.createElement("p");
-    let area = document.createElement("p");
-    let img = document.createElement("img");
-    img.src = temples[i].imageUrl;
-    img.alt = `Image of ${temples[i].templeName}`;
-    img.setAttribute('loading',"lazy");
-    card.appendChild(name);
-    card.appendChild(location);
-    card.appendChild(dedicated)
-    card.appendChild(area);
-    card.appendChild(img);
-    document.getElementById("temple-container").appendChild(card);
-    name.append(temples[i].templeName);
-    location.append(`Location: ${temples[i].location}`);
-    dedicated.append(`Dedicated: ${temples[i].dedicated}`)
-    area.append(`Area: ${temples[i].area} sq ft`)
+// const oldFilter = document.querySelector("#old");
+// // const newFilter = document.querySelector("#new");
+// // const largeFilter = document.querySelector("#large");
+// // const smallFilter = document.querySelector("#small");
+
+
+// function checkOld(temples) {
+//     return (temple.dedicated < 1900);
+// }
+
+// function createOldArray() {
+//     oldArray = temples.filter(checkOld);
+//     return OldArray;
+// }
+
+// oldFilter.addEventListener("click", createOldArray);
+
+function createCard(temples) {
+    for (let i = 0; i < temples.length; i++) {
+        const card = document.createElement("card");
+        document.getElementById("temple-container").appendChild(card);
+        let name = document.createElement("h2");
+        let location = document.createElement("p");
+        let dedicated = document.createElement("p");
+        let area = document.createElement("p");
+        let img = document.createElement("img");
+        img.src = temples[i].imageUrl;
+        img.alt = `Image of ${temples[i].templeName}`;
+        img.setAttribute('loading', "lazy");
+        card.appendChild(name);
+        card.appendChild(location);
+        card.appendChild(dedicated)
+        card.appendChild(area);
+        card.appendChild(img);
+        document.getElementById("temple-container").appendChild(card);
+        name.append(temples[i].templeName);
+        location.append(`Location: ${temples[i].location}`);
+        dedicated.append(`Dedicated: ${temples[i].dedicated}`)
+        area.append(`Area: ${temples[i].area} sq ft`)
+    }
 }
             
-for (let i = 0; i < temples.length; i++) {
-    createCard(i);
-} 
+ 
+createCard(temples);
+
