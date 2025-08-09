@@ -1,0 +1,41 @@
+:root {
+    --accent-color: #b24b27;
+    --dark-color: #331110;
+    --light-color: #fff3d6;
+    --small-font: 18px;
+    --medium-font: 28px;
+    --large-font: 38px;
+    background-color: var(--light-color);
+    color: var(--dark-color);
+    font-family: Delius, Arial, sans-serif;
+}
+
+
+a:visited, a {
+    text-decoration: none;
+    color: var(--light-color);
+}
+
+a:hover {
+    color: var(--accent-color);
+}
+
+a:active {
+    text-decoration: underline;
+    color: var(--accent-color);
+}
+footer, header {
+    background-color: var(--dark-color);
+    color: var(--light-color);
+    text-align: center;
+    padding: 10px 0;
+}
+
+navigation {
+    display: grid;
+}
+
+a {
+    
+    grid-template-columns: 1fr 1fr 1fr;
+}
