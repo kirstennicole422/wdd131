@@ -100,26 +100,9 @@ const temples = [
             "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/jordan-river-utah/400x250/CWD_f5579d41-7344-4498-a589-4017ba5fcc91.jpg"    }
 ];
 
-// let testVariable = "test";
-
-// const oldFilter = document.querySelector("#old");
-// // const newFilter = document.querySelector("#new");
-// // const largeFilter = document.querySelector("#large");
-// // const smallFilter = document.querySelector("#small");
-
-
-// function checkOld(temples) {
-//     return (temple.dedicated < 1900);
-// }
-
-// function createOldArray() {
-//     oldArray = temples.filter(checkOld);
-//     return OldArray;
-// }
-
-// oldFilter.addEventListener("click", createOldArray);
-
 function createCard(temples) {
+    const container = document.getElementById("temple-container");
+    container.innerHTML = ""; // clear old cards first
     for (let i = 0; i < temples.length; i++) {
         const card = document.createElement("card");
         document.getElementById("temple-container").appendChild(card);
@@ -131,11 +114,14 @@ function createCard(temples) {
         img.src = temples[i].imageUrl;
         img.alt = `Image of ${temples[i].templeName}`;
         img.setAttribute('loading', "lazy");
+
+
         card.appendChild(name);
         card.appendChild(location);
         card.appendChild(dedicated)
         card.appendChild(area);
         card.appendChild(img);
+
         document.getElementById("temple-container").appendChild(card);
         name.append(temples[i].templeName);
         location.append(`Location: ${temples[i].location}`);
@@ -144,6 +130,57 @@ function createCard(temples) {
     }
 }
             
- 
-createCard(temples);
+// createCard(temples);
+
+function showAllTemples() {
+    createCard(temples);
+}
+
+function showOldTemples() {
+    const filtered = temples.filter(t => new Date(t.dedicated).getFullYear() < 1900);
+    createCard(filtered);
+}
+
+function showNewTemples() {
+    const filtered = temples.filter(t => new Date(t.dedicated).getFullYear() > 2000);
+    createCard(filtered);
+}
+
+function showLargeTemples() {
+    const filtered = temples.filter(t => t.area > 90000);
+    createCard(filtered);
+}
+
+function showSmallTemples() {
+    const filtered = temples.filter(t => t.area < 10000);
+    createCard(filtered);
+}
+
+document.querySelectorAll(".navigation a").forEach(link => {
+    link.addEventListener("click", (event) => {
+        event.preventDefault();
+
+        const filter = event.target.textContent.toLowerCase();
+
+        switch (filter) {
+            case "home":
+                showAllTemples();
+                break;
+            case "old":
+                showOldTemples();
+                break;
+            case "new":
+                showNewTemples();
+                break;
+            case "large":
+                showLargeTemples();
+                break;
+            case "small":
+                showSmallTemples();
+                break;
+        }
+    });
+});
+
+showAllTemples();
 
