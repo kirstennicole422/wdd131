@@ -9,13 +9,21 @@ header span{
     text-align: center;
 }
 
-header, footer {
+header {
     background-color: red;
     color: white;
     text-align: center;
     padding: 20px;
-    
 }
+
+footer {
+    background-color: red;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+  
 nav {
     display: flex;
     justify-self: center;
