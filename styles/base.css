@@ -23,19 +23,18 @@ footer {
     padding: 20px;
 }
 
-  
 nav {
     display: flex;
     justify-self: center;
 }
 
-a {
+nav a {
     font-size: 30px;
     padding: 30px;
     text-decoration: none;
 }
 
-a:hover {
+nav a:hover {
     background-color: gray;
     color: black;
     font-size: 30px;  
@@ -43,7 +42,7 @@ a:hover {
 
 main {
     background-color: lightgray;
-    max-width: 1000px;
+    max-width: 1500px;
     justify-self: center;
     display: grid;
     grid-template-columns: 3fr 1fr;
@@ -60,11 +59,23 @@ h1 {
 h2 {
     text-align: center;
     background-color: green;
-    padding: 10px 0px;
+    padding: 10px;
     margin: 0px;
 }
 .card{
     background-color: white;
     border: 3px solid black;
+    min-width: 230px;
     /* border-radius: 20px;grid-template-columns: 1fr 1fr; */
+}
+
+.card a {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 10px;
+}
+
+.card a:hover {
+    background-color: yellow;
+    color: black;
 }
