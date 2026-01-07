@@ -40,6 +40,10 @@ nav a:hover {
     font-size: 30px;  
 }
 
+nav a:visited {
+    color: black;
+}   
+
 main {
     background-color: var(--pink);
     max-width: 1500px;
