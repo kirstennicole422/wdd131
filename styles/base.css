@@ -27,13 +27,15 @@ nav {
     justify-self: center;
 }
 
-nav a {
+nav a:link {
     font-size: 30px;
     font-weight: 400;;
     padding: 15px;
     text-decoration: none;
     color: black;
 }
+
+
 
 nav a:hover {
     background-color: var(--cream);
