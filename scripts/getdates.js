@@ -1,3 +1,9 @@
-document.querySelector("#currentyear").innerHTML = new Date().getFullYear();
-document.querySelector("#lastModified").innerHTML = `Last Modified: ${String(new Date().getMonth() + 1).padStart(2, "0")}/${String(new Date().getDate()).padStart(2, "0")}/${new Date().getFullYear()} ${String(new Date().getHours()).padStart(2, "0")}:${String(new Date().getMinutes()).padStart(2, "0")}:${String(new Date().getSeconds()).padStart(2, "0")}`;
-
+const date = new Date();
+document.querySelector("#currentyear").innerHTML = date.getFullYear();
+document.querySelector("#lastModified").innerHTML = `Last Modified: ${String(date.getMonth() + 1).padStart(2, "0")}`
+    + `/${String(date.getDate()).padStart(2, "0")}`
+    + `/${date.getFullYear()} `
+    + `${String(date.getHours()).padStart(2, "0")}`
+    + `:${String(date.getMinutes()).padStart(2, "0")}:`
++`${String(date.getSeconds()).padStart(2, "0")}`;
+    // + `:${toLocaleString(en-US, new Date()).getFullYear()}`;
