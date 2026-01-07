@@ -1,24 +1,32 @@
-/* add fonts */
+/* add js */
+/* add about me, images, and links */
+
 :root {
-    background-color: pink;
+    --roboto: Roboto, Arial, Sans-Serif;
+    --dm-serif: "DM Serif Display", "Times New Roman", Serif;
+    --cream: #fbd9b5;
+    --pink: #e14d81;
+    font-family: var(--roboto);
+    color: black;
+
 }
 
 header span{
     display: block;
     font-size: 20px;
     text-align: center;
+    padding: 10px 0px 20px 0px;
 }
 
 header {
-    background-color: red;
-    color: white;
+    background-color: var(--pink);
     text-align: center;
     padding: 20px;
 }
 
 footer {
-    background-color: red;
-    color: white;
+    background-color: var(--pink);
+    color: black;
     text-align: center;
     padding: 20px;
 }
@@ -30,18 +38,18 @@ nav {
 
 nav a {
     font-size: 30px;
-    padding: 30px;
+    padding: 15px;
     text-decoration: none;
 }
 
 nav a:hover {
-    background-color: gray;
-    color: black;
+    background-color: var(--cream);
+    border-radius: 50px;
     font-size: 30px;  
 }
 
 main {
-    background-color: lightgray;
+    background-color: var(--pink);
     max-width: 1500px;
     justify-self: center;
     display: grid;
@@ -50,7 +58,7 @@ main {
 
 h1 {
     grid-column: 1 / 3;
-    background-color: lightblue;
+    background-color: var(--cream);
     text-align: center;
     padding: 10px 0px;
     margin: 0px;
@@ -58,24 +66,33 @@ h1 {
 
 h2 {
     text-align: center;
-    background-color: green;
+    background-color: var(--pink);
     padding: 10px;
     margin: 0px;
+    min-width: 230px;
 }
+
 .card{
     background-color: white;
     border: 3px solid black;
-    min-width: 230px;
-    /* border-radius: 20px;grid-template-columns: 1fr 1fr; */
 }
 
 .card a {
     display: grid;
     grid-template-columns: 1fr;
     padding: 10px;
+    color: var(--dark-accent-color)
+}
+
+.card p {
+    padding: 10px 20px;
 }
 
 .card a:hover {
-    background-color: yellow;
+    background-color: var(--cream);
+    color: black;
+}
+
+a:visited {
     color: black;
 }
