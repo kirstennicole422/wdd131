@@ -35,8 +35,6 @@ nav a:link {
     color: black;
 }
 
-
-
 nav a:hover {
     background-color: var(--cream);
     border-radius: 50px;
