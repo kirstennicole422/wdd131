@@ -1,0 +1,51 @@
+:root {
+    /* add font */
+    --primary-color: #478e00;
+    --accent-color: #a1c78e;
+    color: black;
+}
+
+header {
+    background-color: var(--primary-color);
+    font-size: 30px;
+}
+
+main {
+    max-width: 500px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-items: center;
+}
+
+nav a {
+    background-color: var(--accent-color);
+    border: 3px solid var(--accent-color);
+    padding: 10px;
+    display: flex;
+}
+
+nav a:link {
+    text-decoration: none;
+    /* color: blue; */
+}
+
+nav a:visited {
+    color: black;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: var(--primary-color);
+    border: 3px solid var(--primary-color);
+}
+
+h1 {
+    grid-column: 1 / -1;
+    text-align: center;
+}
+
+figure {
+    border: 3px solid black;
+}
