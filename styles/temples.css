@@ -1,8 +1,8 @@
 :root {
-    /* add font */
+    font-family: Roboto, Arial, sans-serif;
     --primary-color: #478e00;
     --accent-color: #a1c78e;
-    color: black;
+    --dark-color: #000000;
 }
 
 header {
@@ -28,11 +28,10 @@ nav a {
 
 nav a:link {
     text-decoration: none;
-    /* color: blue; */
 }
 
 nav a:visited {
-    color: black;
+    color: var(--dark-color);
     text-decoration: none;
 }
 
@@ -46,6 +45,9 @@ h1 {
     text-align: center;
 }
 
-figure {
-    border: 3px solid black;
+footer {
+    background-color: var(--primary-color);
+    text-align: center;
+    padding: 5px;
+    font-size: 18px;
 }
