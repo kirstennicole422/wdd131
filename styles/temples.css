@@ -1,8 +1,11 @@
 :root {
     font-family: Roboto, Arial, sans-serif;
-    --primary-color: #478e00;
-    --accent-color: #a1c78e;
+    /* --primary-color: #478e00; */
+    /* --accent-color: #a1c78e; */
+    --primary-color: #789c66;
+    --accent-color: #c0d9b4;
     --dark-color: #000000;
+    color: var(--dark-color);
 }
 
 header {
@@ -51,4 +54,8 @@ footer {
     text-align: center;
     padding: 5px;
     font-size: 18px;
+}
+
+figcaption {
+    text-align: center;
 }
