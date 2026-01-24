@@ -1,4 +1,3 @@
-/* MAKE IMAGES RESPONSIVE!! */
 /* ADD HAMBURGER MENU */
 
 :root {
@@ -68,4 +67,8 @@ footer {
 
 figcaption {
     text-align: center;
+}
+
+figure img {
+    max-width: 100%;
 }
