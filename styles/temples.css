@@ -1,5 +1,5 @@
 /* ADD HAMBURGER MENU */
-/* RECHECK AUTIT/RUBRIC */
+/* RECHECK AUDIT/RUBRIC */
 
 :root {
     font-family: Roboto, Arial, sans-serif;
@@ -13,12 +13,16 @@
 header {
     background-color: var(--primary-color);
     font-size: 30px;
-    
 }
 
 header p {
     padding: 20px;
     margin: 0;
+}
+
+button {
+    background-color: var(--primary-color);
+    border: none;
 }
 
 main {
@@ -51,6 +55,18 @@ nav a:visited {
 nav a:hover {
     background-color: var(--primary-color);
     border: 3px solid var(--primary-color);
+}
+
+.nav-menu {
+    display: none;
+}
+
+.hamburger-button {
+    display:contents;
+}
+
+.nav-menu.open {
+    display: contents;
 }
 
 h1 {

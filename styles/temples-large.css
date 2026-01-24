@@ -5,7 +5,21 @@
             display: grid;
             /* grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); */
             grid-template-columns: 1fr 1fr 1fr;
+            
     }
+    .hamburger-button {
+        display: none;
+    }
+
+    .nav-menu {
+        display: flex;
+        min-width: 50%;
+        background-color: var(--accent-color);
+        justify-content: space-between;
+        text-align: center;
+    }
+
+
 }
 
     
