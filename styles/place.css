@@ -17,7 +17,6 @@ main div {
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 10px;
-    margin: 20px;
     padding: 10px;
 }
 
@@ -34,7 +33,6 @@ h2 {
 .data p:nth-child(even), .weather p:nth-child(odd){
     text-align: right;
     font-weight: bold;
-    /* font-size: 300px; */
 }
 
 h1, footer {
@@ -42,6 +40,7 @@ h1, footer {
     background-color: var(--deep-green);
     color: var(--pale-blue);
     padding: 10px;
+    margin: 5px 0px;
 }
 
 picture img{

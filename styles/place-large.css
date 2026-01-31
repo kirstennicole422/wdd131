@@ -2,33 +2,24 @@
     .data, .weather {
         background-color: var(--clear-blue);
         padding: 60px 10px 0px 10px;
-        margin: 0px;
         position: absolute;
     }
 
-    /* main div {
-        display: inline;
-        position: absolute;
-        /* top: 0; */
-        /* left: 0; */
     source, img {
         object-fit: cover;
-        min-height: 300px
+        min-height: 500px;
+        padding-top: 5px;
+        /* position: relative; */
     }
 
     .data {
-        /* display: grid; */
-        /* position: absolute; */
-        top: 150px;
+        top: 25px;
         left: 20px;
         width: 300px;
-        /* padding-top: 60px; */
     }
 
     .weather {
-        /* display: block; */
-        /* position: absolute; */
-        top: 200px;
+        bottom: 25px;
         right: 20px;
     }
 
@@ -48,5 +39,5 @@
         color: var(--pale-blue);
         padding: 5px;
     }
-
+    main {position: relative;}
 }
