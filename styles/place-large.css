@@ -1,0 +1,11 @@
+@media screen and (min-width: 650px){
+    .data, .weather {
+        background-color: white;
+    }
+
+    .weather img {
+        display: none;
+        
+
+    }
+}
