@@ -44,9 +44,3 @@ h1, footer {
     color: var(--pale-blue);
     padding: 10px;
 }
-
-p {
-    padding: none;
-    margin: none;
-    border: none;
-}
