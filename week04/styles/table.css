@@ -1,0 +1,32 @@
+table {
+    text-align: center;
+    border-collapse: collapse
+    /* border: 3px solid */
+}
+
+th {
+    background-color: black;
+    color: white;
+}
+
+tbody tr:nth-child(even) {
+    background-color: rgb(228, 228, 228);
+}
+
+thead tr th {
+    padding: 10px;
+    /* border: 3px solid red; */
+}
+
+tbody td {
+    border: 1px solid lightgray;
+}
+
+.subhead th {
+    background-color: gray ;
+}
+
+.subhead th:nth-child(1) {
+    background-color: black;
+}
+
