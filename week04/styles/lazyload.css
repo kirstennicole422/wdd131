@@ -1,0 +1,22 @@
+img {
+    width: 400px;
+    min-height: 600px;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+    background: black;
+    animation: fade 10s;
+}
+
+@keyframes fade{
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+h1 {
+    background-color: red;
+}
