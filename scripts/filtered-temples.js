@@ -93,6 +93,14 @@ const temples = [
         dedicated: "1986, October, 24",
         area: 29117,
         imageUrl: "lesldsorg/bc/Temples/photo-galleries/denver-colorado/400x250/denver-temple-lds-766966-wallpaper.jpg"
-    },
-    
+    },  
 ];
+
+for (let i in temples) {
+    console.log(temples[i].templeName);
+    console.log(temples[i].location);
+    console.log(temples[i].dedicated);
+    console.log(temples[i].area);
+    console.log(temples[i].imageURL);
+
+}
