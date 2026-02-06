@@ -78,21 +78,21 @@ const temples = [
         location: "South Jordan, Utah, United States",
         dedicated: "1981, November, 16",
         area: 148236,
-        // imageUrl:
+        imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/jordan-river-utah/400x250/CWD_070ac208-d163-4faa-8123-c583b099c319.jpg"
     },
     {
         templeName: "Provo City Center",
         location: "Provo, Utah, United States",
         dedicated: "2016, March, 20",
         area: 85084,
-        // imageUrl:
+        imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/provo-city-center/2018/400x250/Provo-City-Center-Temple01.jpg"
     },
     {
         templeName: "Denver Colorado",
         location: "Centennial, Colorado, United States",
         dedicated: "1986, October, 24",
         area: 29117,
-        // imageUrl:
+        imageUrl: "lesldsorg/bc/Temples/photo-galleries/denver-colorado/400x250/denver-temple-lds-766966-wallpaper.jpg"
     },
     
 ];
