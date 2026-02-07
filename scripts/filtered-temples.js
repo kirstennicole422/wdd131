@@ -78,21 +78,23 @@ const temples = [
         location: "South Jordan, Utah, United States",
         dedicated: "1981, November, 16",
         area: 148236,
-        imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/jordan-river-utah/400x250/CWD_070ac208-d163-4faa-8123-c583b099c319.jpg"
+        imageUrl:
+            "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/jordan-river-utah/400x250/CWD_070ac208-d163-4faa-8123-c583b099c319.jpg"
     },
     {
         templeName: "Provo City Center",
         location: "Provo, Utah, United States",
         dedicated: "2016, March, 20",
         area: 85084,
-        imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/provo-city-center/2018/400x250/Provo-City-Center-Temple01.jpg"
+        imageUrl:
+            "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/provo-city-center/2018/400x250/Provo-City-Center-Temple01.jpg"
     },
     {
         templeName: "Denver Colorado",
         location: "Centennial, Colorado, United States",
         dedicated: "1986, October, 24",
         area: 29117,
-        imageUrl: "lesldsorg/bc/Temples/photo-galleries/denver-colorado/400x250/denver-temple-lds-766966-wallpaper.jpg"
+        imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/denver-colorado/400x250/denver-temple-lds-766966-wallpaper.jpg"
     },
 ];
 
@@ -117,10 +119,6 @@ for (let i in temples) {
     
     let card = document.createElement("div");
     card.classList.add("fish");
-    // change from write to DOM modification
-    // templeCard = `${temples[i].templeName}\nLocation: ${temples[i].location} Dedication${temples[i].dedicated}Area: ${temples[i].area}`
-    // document.querySelector(`#${i}`).innerHTML = templeCard;
-    // card.innerHTML = templeCard;
     
     let templeName = document.createElement("h2");
     templeName.classList.add("name");
@@ -139,18 +137,21 @@ for (let i in temples) {
     
     let area = document.createElement("p");
     area.classList.add("area");
-    area.innerHTML = `Area: ${temples[i].area}`;
+    area.innerHTML = `Area: ${temples[i].area} sq ft`;
     card.append(area);
+
+    let img = new Image();
+    img.src = temples[i].imageUrl;
+
+    // let img = document.createElement("img");
+    // img.src = `${temples[i].imageUrl}`;
+    // loading = lazy");
+    img.classList.add("img");
+    // img.innerHTML = temples[i].imageURL";
+    card.append(img);
 
     document.querySelector("main").append(card);
 }
-
-
-// Loop through the array and create "temple cards" for each temple by displaying:
-// The name of the temple.
-// The location of the temple.
-// The date the temple was dedicated.
-// The total area of the temple in square feet.
 // The provided image of the temple(an absolute address), making sure to include an appropriate alt value such as the name of the temple.
 // Use native lazy loading for each temple image.
 

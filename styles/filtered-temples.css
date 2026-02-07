@@ -1,6 +1,3 @@
-/* ADD HAMBURGER MENU */
-/* RECHECK AUDIT/RUBRIC */
-
 :root {
     font-family: Roboto, Arial, sans-serif;
     --primary-color: #789c66;
@@ -94,11 +91,19 @@ figure img {
     max-width: 100%;
 }
 
+img {
+    max-width: 80%;
+    max-height: auto;
+    position: relative;
+    bottom: 500px
+}
 
 .fish {
     /* text-emphasis: bold
     ; */
     color: red;
     border: 3px solid blue;
+    width: 15rem;
+    height: 400px
     /* grid-template-columns: auto; */
 }
