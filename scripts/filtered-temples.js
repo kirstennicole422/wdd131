@@ -174,3 +174,29 @@ function filterTemples() {
 }
 
 createTempleCards(filterTemples());
+
+const large = document.querySelector(".large");
+const small = document.querySelector(".small");
+const old = document.querySelector(".old");
+const newTemples = document.querySelector(".new");
+
+
+home.addEventListener("click", () => {
+    createTempleCards(temples);
+})
+
+large.addEventListener("click", () => {
+    createTempleCards(temples.filter(temple => temple.area > 10000));
+})
+
+small.addEventListener("click", () => {
+    createTempleCards(filteredTemples);
+})
+
+old.addEventListener("click", () => {
+    createTempleCards(filteredTemples);
+})
+
+newTemples.addEventListener("click", () => {
+    createTempleCards(filteredTemples);
+})
