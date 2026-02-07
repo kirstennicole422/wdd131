@@ -93,7 +93,7 @@ const temples = [
         dedicated: "1986, October, 24",
         area: 29117,
         imageUrl: "lesldsorg/bc/Temples/photo-galleries/denver-colorado/400x250/denver-temple-lds-766966-wallpaper.jpg"
-    },  
+    },
 ];
 
 // document.querySelector("main").innerHTML("temple-card");
@@ -108,18 +108,41 @@ const temples = [
 //     // figure out how to make image work
 //     console.log(temples[i].imageURL);
 // }
-
+// card.id = "card";
+// card.classList.add("card");
+// document.querySelector(".card").innerHTML = "fish";
+// card.classList.add("card");
 for (let i in temples) {
-    let templeCard = ""
+    let templeCard = "";
+    
+    let card = document.createElement("div");
+    card.classList.add("fish");
     // change from write to DOM modification
-    templeCard += temples[i].templeName;
-    templeCard += temples[i].location;
-    templeCard += temples[i].dedicated;
-    templeCard += temples[i].area;
-    // figure out how to make image work
-    // templeCard += temples[i].imageURL;
-    classList.add
-    document.querySelector("main").append(templeCard);
+    // templeCard = `${temples[i].templeName}\nLocation: ${temples[i].location} Dedication${temples[i].dedicated}Area: ${temples[i].area}`
+    // document.querySelector(`#${i}`).innerHTML = templeCard;
+    // card.innerHTML = templeCard;
+    
+    let templeName = document.createElement("h2");
+    templeName.classList.add("name");
+    templeName.innerHTML = `${temples[i].templeName}`;
+    card.append(templeName);
+
+    let location = document.createElement("p");
+    location.classList.add("location");
+    location.innerHTML = `Location: ${temples[i].location}`;
+    card.append(location);
+    
+    let dedicated = document.createElement("p");
+    dedicated.classList.add("dedication");
+    dedicated.innerHTML = `Dedicated: ${temples[i].dedicated}`;
+    card.append(dedicated);
+    
+    let area = document.createElement("p");
+    area.classList.add("area");
+    area.innerHTML = `Area: ${temples[i].area}`;
+    card.append(area);
+
+    document.querySelector("main").append(card);
 }
 
 

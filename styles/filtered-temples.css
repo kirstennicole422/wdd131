@@ -15,6 +15,10 @@ header {
     font-size: 30px;
 }
 
+main div {
+    background-color: olivedrab;
+}
+
 header p {
     padding: 20px;
     margin: 0;
@@ -88,4 +92,13 @@ figcaption {
 
 figure img {
     max-width: 100%;
+}
+
+
+.fish {
+    /* text-emphasis: bold
+    ; */
+    color: red;
+    border: 3px solid blue;
+    /* grid-template-columns: auto; */
 }
