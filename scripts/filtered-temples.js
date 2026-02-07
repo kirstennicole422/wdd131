@@ -96,11 +96,45 @@ const temples = [
     },  
 ];
 
-for (let i in temples) {
-    console.log(temples[i].templeName);
-    console.log(temples[i].location);
-    console.log(temples[i].dedicated);
-    console.log(temples[i].area);
-    console.log(temples[i].imageURL);
+// document.querySelector("main").innerHTML("temple-card");
+// document.querySelector(".templeCard").innerHTML("test fish");
+// let templeCard = ""
+// for (let i in temples) {
+//     // change from write to DOM modification
+//     templeCard += temples[i].templeName;
+//     console.log(temples[i].location);
+//     console.log(temples[i].dedicated);
+//     console.log(temples[i].area);
+//     // figure out how to make image work
+//     console.log(temples[i].imageURL);
+// }
 
+for (let i in temples) {
+    let templeCard = ""
+    // change from write to DOM modification
+    templeCard += temples[i].templeName;
+    templeCard += temples[i].location;
+    templeCard += temples[i].dedicated;
+    templeCard += temples[i].area;
+    // figure out how to make image work
+    // templeCard += temples[i].imageURL;
+    classList.add
+    document.querySelector("main").append(templeCard);
 }
+
+
+// Loop through the array and create "temple cards" for each temple by displaying:
+// The name of the temple.
+// The location of the temple.
+// The date the temple was dedicated.
+// The total area of the temple in square feet.
+// The provided image of the temple(an absolute address), making sure to include an appropriate alt value such as the name of the temple.
+// Use native lazy loading for each temple image.
+
+
+// Respond to the main navigation menu items by filtering and displaying the temples as follows:
+// Old – temples built before 1900
+// New – temples built after 2000
+// Large – temples larger than 90,000 square feet
+// Small – temples smaller than 10,000 square feet
+// Home – displays all the temples stored in the array.
