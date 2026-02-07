@@ -103,8 +103,8 @@ const temples = [
     },
 ];
 
-function createTempleCards(temples) {
-    for (let i in temples) {
+function createTempleCards(filteredTemples) {
+    for (let i in filteredTemples) {
         // let cardContainer = document.querySelector(".card");
         let card = document.createElement("div");
         card.classList.add("card");
@@ -162,43 +162,41 @@ function createTempleCards(temples) {
 // createTempleCards(temples.filter(isNew));
 
 
-// function filterTemples() {
-//     let filteredTemples = [];
-//     for (let i in temples) {
-//         if (temples[i].dedicated.slice(0, 4) >= "2000") {
-//             filteredTemples.push(temples[i]);
-//             // };
-//         }
-//     }
-//     return filteredTemples;
-// }
+function filterTemples() {
+    let filteredTemples = [];
+    for (let i in temples) {
+        if (temples[i].dedicated.slice(0, 4) >= "2000") {
+            filteredTemples.push(temples[i]);
+            // };
+        }
+    }
+    return filteredTemples;
+}
 
-// createTempleCards(filterTemples);
-createTempleCards(temples);
+createTempleCards(filterTemples());
 
-
-// const large = document.querySelector(".large");
-// const small = document.querySelector(".small");
-// const old = document.querySelector(".old");
-// const newTemples = document.querySelector(".new");
+const large = document.querySelector(".large");
+const small = document.querySelector(".small");
+const old = document.querySelector(".old");
+const newTemples = document.querySelector(".new");
 
 
-// home.addEventListener("click", () => {
-//     createTempleCards(temples);
-// })
+home.addEventListener("click", () => {
+    createTempleCards(temples);
+})
 
-// large.addEventListener("click", () => {
-//     createTempleCards(temples.filter(temple => temple.area > 90000));
-// })
+large.addEventListener("click", () => {
+    createTempleCards(temples.filter(temple => temple.area > 10000));
+})
 
-// small.addEventListener("click", () => {
-//     createTempleCards(filteredTemples);
-// })
+small.addEventListener("click", () => {
+    createTempleCards(filteredTemples);
+})
 
-// old.addEventListener("click", () => {
-//     createTempleCards(filteredTemples);
-// })
+old.addEventListener("click", () => {
+    createTempleCards(filteredTemples);
+})
 
-// newTemples.addEventListener("click", () => {
-//     createTempleCards(filteredTemples);
-// })
+newTemples.addEventListener("click", () => {
+    createTempleCards(filteredTemples);
+})
