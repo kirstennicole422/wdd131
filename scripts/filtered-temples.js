@@ -1,12 +1,20 @@
-// on click 
+// FIX COLORS
+// ADD FILTERS
 
+// Respond to the main navigation menu items by filtering and displaying the temples as follows:
+// Old – temples built before 1900
+// New – temples built after 2000
+// Large – temples larger than 90,000 square feet
+// Small – temples smaller than 10,000 square feet
+// Home – displays all the temples stored in the array.
+
+// CENTER CONTENT
 
 document.addEventListener("DOMContentLoaded", () => {
     const navigation = document.querySelector(".nav-menu");
     const hamburgerButton = document.querySelector(".hamburger-button");
     hamburgerButton.addEventListener("click", () => {
         navigation.classList.toggle("open");
-        // hamburgerButton.classList.toggle("open");
         if (navigation.classList.contains("open")) {
             hamburgerButton.textContent = "✖";
         }
@@ -98,24 +106,7 @@ const temples = [
     },
 ];
 
-// document.querySelector("main").innerHTML("temple-card");
-// document.querySelector(".templeCard").innerHTML("test fish");
-// let templeCard = ""
-// for (let i in temples) {
-//     // change from write to DOM modification
-//     templeCard += temples[i].templeName;
-//     console.log(temples[i].location);
-//     console.log(temples[i].dedicated);
-//     console.log(temples[i].area);
-//     // figure out how to make image work
-//     console.log(temples[i].imageURL);
-// }
-// card.id = "card";
-// card.classList.add("card");
-// document.querySelector(".card").innerHTML = "fish";
-// card.classList.add("card");
 for (let i in temples) {
-    let templeCard = "";
     
     let card = document.createElement("div");
     card.classList.add("card");
@@ -140,29 +131,12 @@ for (let i in temples) {
     area.innerHTML = `Area: ${temples[i].area} sq ft`;
     card.append(area);
 
-
-    // NEED ALT Text
-    // NEED LAZY LOADING
-    // MAKE OWN CONTAINER??
     let img = new Image();
     img.src = temples[i].imageUrl;
-
-    // let img = document.createElement("img");
-    // img.src = `${temples[i].imageUrl}`;
-    // loading = lazy");
+    img.alt = temples[i].templeName;
+    img.loading = "lazy";
     img.classList.add("img");
-    // img.innerHTML = temples[i].imageURL";
     card.append(img);
 
     document.querySelector("main").append(card);
 }
-// The provided image of the temple(an absolute address), making sure to include an appropriate alt value such as the name of the temple.
-// Use native lazy loading for each temple image.
-
-
-// Respond to the main navigation menu items by filtering and displaying the temples as follows:
-// Old – temples built before 1900
-// New – temples built after 2000
-// Large – temples larger than 90,000 square feet
-// Small – temples smaller than 10,000 square feet
-// Home – displays all the temples stored in the array.

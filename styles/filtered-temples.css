@@ -12,10 +12,6 @@ header {
     font-size: 30px;
 }
 
-main div {
-    background-color: olivedrab;
-}
-
 header p {
     padding: 20px;
     margin: 0;
@@ -31,6 +27,7 @@ main {
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr;
+    grid-gap: 10px;
     align-items: center;
     justify-items: center;
 }
@@ -80,30 +77,30 @@ footer {
     background-color: var(--accent-color);
     text-align: center;
     padding: 5px;
+    margin-top: 10px;
     font-size: 18px;
-}
-
-figcaption {
-    text-align: center;
-}
-
-figure img {
-    max-width: 100%;
 }
 
 img {
     width: 80%;
     height: auto;
-    position: relative;
-    top: 50px;
+    object-fit: cover;
+    /* grid-template-rows: 5/6; */
+    position: absolute;
+    /* top: 50px; */
+    bottom: 20px;
+    border: 2px solid var(--dark-color);
 }
 
 .card {
-    /* text-emphasis: bold
-    ; */
-    color: red;
-    border: 3px solid blue;
-    width: 15rem;
-    height: 400px
-    /* grid-template-columns: auto; */
+    background-color: var(--accent-color);
+    color: var(--dark-color);
+    position: relative;
+    border: 3px solid var(--primary-color);
+    width: 30vw;
+    height: 400px;
+    align-items: center;
+    margin: auto;
+    /* display: grid; */
+    /* grid-template-rows: 1fr 1fr 1fr 1fr fr; */
 }
