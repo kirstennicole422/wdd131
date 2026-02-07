@@ -1,4 +1,3 @@
-// FIX COLORS
 // ADD FILTERS
 
 // Respond to the main navigation menu items by filtering and displaying the temples as follows:
@@ -7,8 +6,6 @@
 // Large – temples larger than 90,000 square feet
 // Small – temples smaller than 10,000 square feet
 // Home – displays all the temples stored in the array.
-
-// CENTER CONTENT
 
 document.addEventListener("DOMContentLoaded", () => {
     const navigation = document.querySelector(".nav-menu");
@@ -106,47 +103,74 @@ const temples = [
     },
 ];
 
-for (let i in temples) {
-    
-    // let cardContainer = document.querySelector(".card");
-    let card = document.createElement("div");
-    card.classList.add("card");
-    let cardText = document.createElement("div");
-    cardText.classList.add("card-text");
-
-    let imgContainer = document.createElement("div");
-    imgContainer.classList.add("img-container");
-
-    let templeName = document.createElement("h2");
-    templeName.classList.add("name");
-    templeName.innerHTML = `${temples[i].templeName}`;
-    cardText.append(templeName);
-
-    let location = document.createElement("p");
-    location.classList.add("location");
-    location.innerHTML = `Location: ${temples[i].location}`;
-    cardText.append(location);
-    
-    let dedicated = document.createElement("p");
-    dedicated.classList.add("dedication");
-    dedicated.innerHTML = `Dedicated: ${temples[i].dedicated}`;
-    cardText.append(dedicated);
-    
-    let area = document.createElement("p");
-    area.classList.add("area");
-    area.innerHTML = `Area: ${temples[i].area} sq ft`;
-    cardText.append(area);
-
-    card.append(cardText);
-    let img = new Image();
-    img.src = temples[i].imageUrl;
-    img.alt = temples[i].templeName;
-    img.loading = "lazy";
-    // img.classList.add("img");
-    imgContainer.append(img);
-    
-    card.append(imgContainer);
-    // cardContainer.append(card);
-
-    document.querySelector(".card-container").append(card);
+function createTempleCards(filteredTemples) {
+    for (let i in filteredTemples) {
+        // let cardContainer = document.querySelector(".card");
+        let card = document.createElement("div");
+        card.classList.add("card");
+        let cardText = document.createElement("div");
+        cardText.classList.add("card-text");
+        
+        let imgContainer = document.createElement("div");
+        imgContainer.classList.add("img-container");
+        
+        let templeName = document.createElement("h2");
+        templeName.classList.add("name");
+        templeName.innerHTML = `${temples[i].templeName}`;
+        cardText.append(templeName);
+        
+        let location = document.createElement("p");
+        location.classList.add("location");
+        location.innerHTML = `Location: ${temples[i].location}`;
+        cardText.append(location);
+        
+        let dedicated = document.createElement("p");
+        dedicated.classList.add("dedication");
+        dedicated.innerHTML = `Dedicated: ${temples[i].dedicated}`;
+        cardText.append(dedicated);
+        
+        let area = document.createElement("p");
+        area.classList.add("area");
+        area.innerHTML = `Area: ${temples[i].area} sq ft`;
+        cardText.append(area);
+        
+        card.append(cardText);
+        let img = new Image();
+        img.src = temples[i].imageUrl;
+        img.alt = temples[i].templeName;
+        img.loading = "lazy";
+        // img.classList.add("img");
+        imgContainer.append(img);
+        
+        card.append(imgContainer);
+        // cardContainer.append(card);
+        
+        document.querySelector(".card-container").append(card);
+    }
 }
+
+// function isNew() {
+//     for (let i in temples) {
+//         if (temples[i].dedicated.slice(0, 4) >= "2000") {
+//             return temples[i];
+//             // };
+//         }
+//         // return
+//     }
+// }
+
+// createTempleCards(temples.filter(isNew));
+
+
+function filterTemples() {
+    let filteredTemples = [];
+    for (let i in temples) {
+        if (temples[i].dedicated.slice(0, 4) >= "2000") {
+            filteredTemples.push(temples[i]);
+            // };
+        }
+    }
+    return filteredTemples;
+}
+
+createTempleCards(filterTemples());
