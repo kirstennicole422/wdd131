@@ -108,35 +108,45 @@ const temples = [
 
 for (let i in temples) {
     
+    // let cardContainer = document.querySelector(".card");
     let card = document.createElement("div");
     card.classList.add("card");
-    
+    let cardText = document.createElement("div");
+    cardText.classList.add("card-text");
+
+    let imgContainer = document.createElement("div");
+    imgContainer.classList.add("img-container");
+
     let templeName = document.createElement("h2");
     templeName.classList.add("name");
     templeName.innerHTML = `${temples[i].templeName}`;
-    card.append(templeName);
+    cardText.append(templeName);
 
     let location = document.createElement("p");
     location.classList.add("location");
     location.innerHTML = `Location: ${temples[i].location}`;
-    card.append(location);
+    cardText.append(location);
     
     let dedicated = document.createElement("p");
     dedicated.classList.add("dedication");
     dedicated.innerHTML = `Dedicated: ${temples[i].dedicated}`;
-    card.append(dedicated);
+    cardText.append(dedicated);
     
     let area = document.createElement("p");
     area.classList.add("area");
     area.innerHTML = `Area: ${temples[i].area} sq ft`;
-    card.append(area);
+    cardText.append(area);
 
+    card.append(cardText);
     let img = new Image();
     img.src = temples[i].imageUrl;
     img.alt = temples[i].templeName;
     img.loading = "lazy";
-    img.classList.add("img");
-    card.append(img);
+    // img.classList.add("img");
+    imgContainer.append(img);
+    
+    card.append(imgContainer);
+    // cardContainer.append(card);
 
-    document.querySelector("main").append(card);
+    document.querySelector(".card-container").append(card);
 }
