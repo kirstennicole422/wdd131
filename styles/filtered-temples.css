@@ -92,13 +92,13 @@ figure img {
 }
 
 img {
-    max-width: 80%;
-    max-height: auto;
+    width: 80%;
+    height: auto;
     position: relative;
-    bottom: 500px
+    top: 50px;
 }
 
-.fish {
+.card {
     /* text-emphasis: bold
     ; */
     color: red;

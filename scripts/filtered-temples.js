@@ -118,7 +118,7 @@ for (let i in temples) {
     let templeCard = "";
     
     let card = document.createElement("div");
-    card.classList.add("fish");
+    card.classList.add("card");
     
     let templeName = document.createElement("h2");
     templeName.classList.add("name");
@@ -140,6 +140,10 @@ for (let i in temples) {
     area.innerHTML = `Area: ${temples[i].area} sq ft`;
     card.append(area);
 
+
+    // NEED ALT Text
+    // NEED LAZY LOADING
+    // MAKE OWN CONTAINER??
     let img = new Image();
     img.src = temples[i].imageUrl;
 
