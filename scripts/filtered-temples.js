@@ -104,8 +104,9 @@ const temples = [
 ];
 
 function createTempleCards(temples) {
+    document.querySelector(".card-container").innerHTML = "";
+    
     for (let i in temples) {
-        // let cardContainer = document.querySelector(".card");
         let card = document.createElement("div");
         card.classList.add("card");
         let cardText = document.createElement("div");
@@ -139,66 +140,51 @@ function createTempleCards(temples) {
         img.src = temples[i].imageUrl;
         img.alt = temples[i].templeName;
         img.loading = "lazy";
-        // img.classList.add("img");
         imgContainer.append(img);
         
         card.append(imgContainer);
-        // cardContainer.append(card);
         
         document.querySelector(".card-container").append(card);
     }
 }
 
-// function isNew() {
-//     for (let i in temples) {
-//         if (temples[i].dedicated.slice(0, 4) >= "2000") {
-//             return temples[i];
-//             // };
-//         }
-//         // return
-//     }
-// }
-
-// createTempleCards(temples.filter(isNew));
-
-
-// function filterTemples() {
-//     let filteredTemples = [];
-//     for (let i in temples) {
-//         if (temples[i].dedicated.slice(0, 4) >= "2000") {
-//             filteredTemples.push(temples[i]);
-//             // };
-//         }
-//     }
-//     return filteredTemples;
-// }
-
-// createTempleCards(filterTemples);
 createTempleCards(temples);
 
 
-// const large = document.querySelector(".large");
-// const small = document.querySelector(".small");
-// const old = document.querySelector(".old");
-// const newTemples = document.querySelector(".new");
+const large = document.querySelector(".large");
+const small = document.querySelector(".small");
+const old = document.querySelector(".old");
+const newTemples = document.querySelector(".new");
+const home = document.querySelector(".home");
 
+home.addEventListener("click", () => {
+    createTempleCards(temples);
+})
 
-// home.addEventListener("click", () => {
-//     createTempleCards(temples);
-// })
+large.addEventListener("click", () => {
+    createTempleCards(temples.filter(temple => temple.area > 90000));
+})
 
-// large.addEventListener("click", () => {
-//     createTempleCards(temples.filter(temple => temple.area > 90000));
-// })
+small.addEventListener("click", () => {
+    createTempleCards(temples.filter(temple => temple.area < 10000));
+})
 
-// small.addEventListener("click", () => {
-//     createTempleCards(filteredTemples);
-// })
+old.addEventListener("click", () => {
+    let filteredTemples = []
+    for (let i in temples) {
+        if (temples[i].dedicated.slice(0, 4) < 1900) {
+            filteredTemples.push(temples[i]);
+        }
+    }
+    createTempleCards(filteredTemples);
+})
 
-// old.addEventListener("click", () => {
-//     createTempleCards(filteredTemples);
-// })
-
-// newTemples.addEventListener("click", () => {
-//     createTempleCards(filteredTemples);
-// })
+newTemples.addEventListener("click", () => {
+    let filteredTemples = []
+    for (let i in temples) {
+        if (temples[i].dedicated.slice(0, 4) > 2000) {
+            filteredTemples.push(temples[i]);
+        }
+    }
+    createTempleCards(filteredTemples);
+})
