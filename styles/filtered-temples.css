@@ -86,7 +86,6 @@ footer {
     border: 3px solid var(--primary-color);
     width: 90vw;
     height: 400px;
-    display: flex;
     justify-items: center;
     justify-content: center;
     flex-wrap: wrap;
