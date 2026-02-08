@@ -163,10 +163,13 @@ home.addEventListener("click", () => {
 
 large.addEventListener("click", () => {
     createTempleCards(temples.filter(temple => temple.area > 90000));
+    document.querySelector("h1").innerHTML = "Large";
 })
 
 small.addEventListener("click", () => {
     createTempleCards(temples.filter(temple => temple.area < 10000));
+    document.querySelector("h1").innerHTML = "Small";
+
 })
 
 old.addEventListener("click", () => {
@@ -177,6 +180,8 @@ old.addEventListener("click", () => {
         }
     }
     createTempleCards(filteredTemples);
+    document.querySelector("h1").innerHTML = "Old";
+
 })
 
 newTemples.addEventListener("click", () => {
@@ -187,4 +192,6 @@ newTemples.addEventListener("click", () => {
         }
     }
     createTempleCards(filteredTemples);
+    document.querySelector("h1").innerHTML = "New";
+
 })
