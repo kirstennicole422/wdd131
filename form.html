@@ -20,9 +20,9 @@
     </header>
     <main>
         <form method="get" action="review.html" class="">
-            <select id="product-name" name="product" required>
+            <label><select id="product-name" name="product" required>
                 <option selected disabled>Select a Product...</option>
-            </select>
+            </select></label>
             <div>Overall Rating</div>
             <label><input id="1star" type="radio" name="rating" value="1" required>&star;</label>
             <label><input id="2star" type="radio" name="rating" value="2" required>&star;&star;</label>
@@ -33,12 +33,12 @@
             <div>Date of Installation</div>
             <label><input id="date" type="date" name="date" required></label>
             <div class="features">Useful Features</div>
-            <label><input id="features" type="checkbox" name="features" value="durability" required>Durability</label>
-            <label><input id="features" type="checkbox" name="features" value="ease" required>Ease of Use</label>
-            <label><input id="features" type="checkbox" name="features" value="performance" required>Performance</label>
-            <label><input id="features" type="checkbox" name="features" value="design" required>Design</label>
+            <label><input id="durability" type="checkbox" name="features" value="durability" required>Durability</label>
+            <label><input id="ease" type="checkbox" name="features" value="ease" required>Ease of Use</label>
+            <label><input id="performance" type="checkbox" name="features" value="performance" required>Performance</label>
+            <label><input id="design" type="checkbox" name="features" value="design" required>Design</label>
             <div>Written Review</div>
-            <textarea id="review" name="review"></textarea>
+            <label><textarea id="review" name="review"></textarea></label>
             <label>Username<input type="text" id="user" name="user"></label>
             <input type="submit" value="Publish My Review">
         </form>
