@@ -4,22 +4,41 @@
     --pale-blue: #F0FFFF;
     --blue: #7DAEEB;
     --clear-blue: #F0FFFFBB;
+    --simple-font: Roboto, Arial, sans-serif;
+    --fancy-font: Delius, Arial, sans-serif;
     background-color: var(--pale-blue);
     color: var(--deep-green);
+    font-family: var(--simple-font);
 }
 
 h2 {
     background-color: var(--deep-green);
     color: var(--pale-blue);
     padding: 5px 10px;
+    font-family: var(--fancy-font)
 }
+
 p {
     padding: 0 10px;
+}
+
+div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+img {
+    max-width: 80%;
+    height: auto;
+}
+
+h1 {
+    font-family: var(--fancy-font)
 }
 
 header, footer {
     padding: 5px 0;
     background-color: var(--deep-green);
-        color: var(--pale-blue);
+    color: var(--pale-blue);
     text-align: center;
 }
