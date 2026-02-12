@@ -8,8 +8,18 @@
     color: var(--deep-green);
 }
 
-h1, h2 {
+h2 {
     background-color: var(--deep-green);
     color: var(--pale-blue);
     padding: 5px 10px;
+}
+p {
+    padding: 0 10px;
+}
+
+header, footer {
+    padding: 5px 0;
+    background-color: var(--deep-green);
+        color: var(--pale-blue);
+    text-align: center;
 }
