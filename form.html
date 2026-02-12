@@ -20,9 +20,9 @@
     </header>
     <main>
         <form method="get" action="review.html" class="">
-            <label><select id="product-name" name="product" required>
+            <select id="product-name" name="product" required>
                 <option selected disabled value="">Select a Product...</option>
-            </select></label>
+            </select>
             <div>Overall Rating</div>
             <label><input id="1star" type="radio" name="rating" value="1" required>&star;</label>
             <label><input id="2star" type="radio" name="rating" value="2" required>&star;&star;</label>
@@ -38,7 +38,7 @@
             <label><input id="performance" type="checkbox" name="features" value="performance" required>Performance</label>
             <label><input id="design" type="checkbox" name="features" value="design" required>Design</label>
             <div>Written Review</div>
-            <label><textarea id="review" name="review"></textarea></label>
+            <textarea id="review" name="review"></textarea>
             <label>Username<input type="text" id="user" name="user"></label>
             <input type="submit" value="Publish My Review">
         </form>
