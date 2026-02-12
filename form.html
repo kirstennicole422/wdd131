@@ -1,22 +1,53 @@
 <!DOCTYPE html>
 <html lang="en-US">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width,initial-scale=1.0" >
-        <meta name="description" content="description of page">
-        <meta name="author" content="Kirsten Stockwell">
-		<script src="scripts/getdates.js" defer></script>
-		<script src="scripts/form.js" defer></script>
-		<link rel="stylesheet" href="styles/form.css">
-		<link rel="stylesheet" href="styles/form-large.css">
-		<title>Product Review Form | Kirsten Stockwell | WDD131</title>
-    </head>
-    <body>
-        <header>
-            <h1>Product Review</h1>
-            <nav></nav>
-        </header>
-        <main></main>
-        <footer></footer>
-    </body>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="description" content="description of page">
+    <meta name="author" content="Kirsten Stockwell">
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/form.js" defer></script>
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="stylesheet" href="styles/form-large.css">
+    <title>Product Review Form | Kirsten Stockwell | WDD131</title>
+</head>
+
+<body>
+    <header>
+        <h1>Product Review</h1>
+        <nav></nav>
+    </header>
+    <main>
+        <form method="get" action="review.html" class="">
+            <select id="product-name" name="" required>
+                <option selected disabled>Select a Product...</option>
+            </select>
+            <div>Overall Rating</div>
+            <label><input id="rating" type="radio" name="rating" value="1" required>&star;</label>
+            <label><input id="rating" type="radio" name="rating" value="2" required>&star;&star;</label>
+            <label><input id="rating" type="radio" name="rating" value="3" required>&star;&star;&star;</label>
+            <label><input id="rating" type="radio" name="rating" value="4" required>&star;&star;&star;&star;</label>
+            <label><input id="rating" type="radio" name="rating" value="5"
+                    required>&star;&star;&star;&star;&star;</label>
+            <div>Date of Installation</div>
+            <label><input id="date" type="date" name="date" required></label>
+            <div class="features">Useful Features</div>
+            <label><input id="features" type="checkbox" name="features" value="durability" required>Durability</label>
+            <label><input id="features" type="checkbox" name="features" value="ease" required>Ease of Use</label>
+            <label><input id="features" type="checkbox" name="features" value="performance" required>Performance</label>
+            <label><input id="features" type="checkbox" name="features" value="design" required>Design</label>
+            <div>Written Review</div>
+            <textarea id="review" name="review"></textarea>
+            <label>Username<input type="text" id="user" name="user"></label>
+            <input type="submit" value="Publish My Review">
+        </form>
+
+    </main>
+    <footer>
+        <p>&copy;<span id="currentyear"></span> | Kirsten Stockwell | Colorado, USA</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
 </html>
