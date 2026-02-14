@@ -1,0 +1,9 @@
+@media screen and (min-width: 650px) {
+
+    #product-name,
+    #date,
+    #user,
+    #review {
+        min-width: 600px;
+    }
+}

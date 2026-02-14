@@ -20,30 +20,31 @@
     </header>
     <main>
         <form method="get" action="review.html" class="">
+            <div>Product Name<span class="required">*</span></div>
             <label for="product-name"></label>
             <select id="product-name" name="product" required>
                 <option selected disabled value="">Select a Product...</option>
             </select>
-            <div>Overall Rating</div>
+            <div>Overall Rating<span class="required">*</span></div>
             <label for="1star"><input id="1star" type="radio" name="rating" value="1" required>&star;</label>
             <label for="2star"><input id="2star" type="radio" name="rating" value="2" required>&star;&star;</label>
             <label for="3star"><input id="3star" type="radio" name="rating" value="3" required>&star;&star;&star;</label>
             <label for="4star"><input id="4star" type="radio" name="rating" value="4" required>&star;&star;&star;&star;</label>
             <label for="5star"><input id="5star" type="radio" name="rating" value="5"
                     required>&star;&star;&star;&star;&star;</label>
-            <div>Date of Installation</div>
+            <div>Date of Installation<span class="required">*</span></div>
             <label for="date"><input id="date" type="date" name="date" required></label>
             <div class="features">Useful Features</div>
-            <label for="durability">Durability<input id="durability" type="checkbox" name="features" value="durability"></label>
+            <label for="durability"><input id="durability" type="checkbox" name="features" value="durability">Durability</label>
             <label for="ease"><input id="ease" type="checkbox" name="features" value="ease">Ease of Use</label>
             <label for="performance"><input id="performance" type="checkbox" name="features" value="performance">Performance</label>
             <label for="design"><input id="design" type="checkbox" name="features" value="design">Design</label>
-            <div>Written Review (Optional)</div>
+            <div>Written Review</div>
             <label for="review"></label><textarea id="review" name="review"></textarea>
-            <label for="user">Your Name (Optional)<input type="text" id="user" name="user"></label>
+            <div>Your Name</div>
+            <label for="user"><input type="text" id="user" name="user"></label>
             <input type="submit" value="Publish My Review">
         </form>
-        <div class="tester">fd</div>
     </main>
     <footer>
         <p>&copy;<span id="currentyear"></span> | Kirsten Stockwell | Colorado, USA</p>

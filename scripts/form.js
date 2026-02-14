@@ -35,8 +35,3 @@ while (i < products.length) {
     productName.append(newOption);
     i++
 };
-
-let refresh = JSON.parse(localStorage.getItem("refreshCount")) || 0;
-refresh++;
-localStorage.setItem("refreshCount", JSON.stringify(refresh));
-document.querySelector(".tester").textContent = refresh;

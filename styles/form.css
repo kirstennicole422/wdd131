@@ -1,7 +1,47 @@
-.product-option {
-    /* background-color: yellow; */
+:root {
+    --med-green: #728821;
+        --deep-green: #415700;
+        --pale-blue: #F0FFFF;
+        --blue: #7DAEEB;
+        --clear-blue: #F0FFFFBB;
+        --small-font: 18px;
+        --medium-font: 28px;
+        --large-font: 38px;
+        font-size: var(--small-font);
+        color: var(--deep-green);
+        background-color: var(--pale-blue);
+        font-family: Delius, Arial, sans-serif;
 }
 
 label {
     display: block;
+    /* padding: 30px; */
+}
+
+div {
+    padding-top: 30px;
+}
+
+.required {
+    color: darkred;
+}
+
+footer, header {
+    background-color: var(--deep-green);
+    color: var(--pale-blue);
+    padding: 5px;
+    text-align: center;
+}
+
+#product-name, #date, #user, #review {
+    min-height: 44px;
+    width: 90%;
+    min-width: 300px;
+    background-color: var(--pale-blue);
+    color: var(--deep-green);
+}
+
+.review-conf{
+    text-align: center;
+    color: var(--deep-green);
 }
