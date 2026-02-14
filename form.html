@@ -20,6 +20,7 @@
     </header>
     <main>
         <form method="get" action="review.html" class="">
+            <label for="product-name"></label>
             <select id="product-name" name="product" required>
                 <option selected disabled value="">Select a Product...</option>
             </select>
@@ -34,12 +35,12 @@
             <label for="date"><input id="date" type="date" name="date" required></label>
             <div class="features">Useful Features</div>
             <label for="durability">Durability<input id="durability" type="checkbox" name="features" value="durability"></label>
-            <label><input id="ease" type="checkbox" name="features" value="ease">Ease of Use</label>
-            <label><input id="performance" type="checkbox" name="features" value="performance">Performance</label>
-            <label><input id="design" type="checkbox" name="features" value="design">Design</label>
+            <label for="ease"><input id="ease" type="checkbox" name="features" value="ease">Ease of Use</label>
+            <label for="performance"><input id="performance" type="checkbox" name="features" value="performance">Performance</label>
+            <label for="design"><input id="design" type="checkbox" name="features" value="design">Design</label>
             <div>Written Review (Optional)</div>
-            <textarea id="review" name="review"></textarea>
-            <label>Your Name (Optional)<input type="text" id="user" name="user"></label>
+            <label for="review"></label><textarea id="review" name="review"></textarea>
+            <label for="user">Your Name (Optional)<input type="text" id="user" name="user"></label>
             <input type="submit" value="Publish My Review">
         </form>
         <div class="tester">fd</div>
