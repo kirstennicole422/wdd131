@@ -1,0 +1,14 @@
+@media screen and (min-width: 800px) {
+    nav a {
+        text-align: center;
+        justify-content: center;
+    }
+
+    nav {
+        display: flex;
+    }
+
+    .open {
+        border: 3px solid var(--deep-green);
+    }
+}

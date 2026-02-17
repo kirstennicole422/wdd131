@@ -1,0 +1,44 @@
+:root {
+    --med-green: #728821;
+    --deep-green: #415700;
+    --pale-blue: #F0FFFF;
+    /* --blue: #7DAEEB; */
+    --blue: #2E5788;
+
+    --clear-blue: #F0FFFFBB;
+    --small-font: 18px;
+    --medium-font: 28px;
+    --large-font: 38px;
+    font-size: var(--small-font);
+    color: var(--deep-green);
+    background-color: var(--pale-blue);
+    font-family: Delius, Arial, sans-serif;
+}
+
+nav a {
+    display: flex;
+    width: 300px;
+    height: 40px;
+    background-color: var(--blue);
+    text-align: center;
+    align-items: center;
+    text-decoration: none;
+    color: var(--pale-blue);
+    padding-left: 10px;
+    border: 3px solid var(--pale-blue);
+}
+
+nav {
+    /* display: block; */
+}
+
+nav a:visited {
+    color: var(--pale-blue);
+}
+
+.open {
+    font-size: 30px;
+    background-color: var(--deep-green);
+    color: var(--pale-blue);
+
+}
