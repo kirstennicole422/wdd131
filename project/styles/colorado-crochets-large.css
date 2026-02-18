@@ -2,13 +2,19 @@
     nav a {
         text-align: center;
         justify-content: center;
+        width: 25%;
     }
 
     nav {
         display: flex;
+        width: 100%;
     }
 
     .open {
         border: 3px solid var(--deep-green);
+    }
+
+    .region-card {
+        grid-template-columns: 1fr 1fr 1fr;
     }
 }
