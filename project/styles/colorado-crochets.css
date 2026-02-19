@@ -123,22 +123,34 @@ h2 {
 }
 
 .home {
-    display: flex;
+    position: relative;
 }
 
 .hero-head {
     position: relative;
+    background-color: var(--clear-blue);
+    top: -10px;
+    min-width: 100%;
+    padding: 20px 0px;
 }
 
 .hero-p {
     position: relative;
-    top: 200px;
-    left: 500px;
+    top: 0px;
+    background-color: var(--clear-blue);
+    text-align: center;
+    padding: 10px;
+
 }
 
 .hero {
+    position: absolute;
     width: 100%;
+    text-align: center;
     left: 0;
+    top: 10px;
+    
+    /* margin-top: 30px; */
 }
 
 .hero img {
