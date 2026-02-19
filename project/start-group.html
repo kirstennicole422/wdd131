@@ -9,6 +9,7 @@
     <script src="scripts/getdates.js" defer></script>
     <script src="scripts/region-list.js" defer></script>
     <script src="scripts/start-group.js" defer></script>
+    <script src="scripts/menu.js" defer></script>
     <link rel="stylesheet" href="styles/colorado-crochets.css">
     <link rel="stylesheet" href="styles/colorado-crochets-large.css">
     <title>Start a Group | Colorado Crochets | Kirsten Stockwell | WDD131</title>
@@ -20,13 +21,17 @@
 
 <body>
     <header>
-        <h1>Colorado Crochets</h1>
-        <nav>
+        <h1>Colorado Crochets
+            <button class="hamburger-button">☰</button>
+        </h1>
+        <nav class="nav-menu">
             <a href="index.html">Home</a>
             <a href="find-group.html">Find a Group</a>
             <a href="start-group.html" class="open">Start a Group</a>
         </nav>
     </header>
+
+    
     <main>
         <form method="get" action="confirmation.html" class="start-group-form">
         <fieldset>
@@ -38,7 +43,7 @@
                 Me</label>
             <label for="call"><input id="call" type="checkbox" name="call" value="call">Call
                 Me</label>
-            <div>Email<span class="required">*</span><label for="email"><input type="email" id="email" name="email" required></label></div>
+            <div><label for="email">Email<span class="required">*</span><input type="email" id="email" name="email" required></label></div>
         </fieldset>
         <fieldset>
             <legend>About the Meeting</legend>
@@ -46,7 +51,7 @@
                 <select id="region-name" name="region-name" required>
                     <option selected disabled value="">Select a Region...</option>
                 </select>
-                <div>City<span class="required">*</span><label for="city"><input type="text" id="city" name="city" required></label></div>
+                <div><label for="city">City<span class="required">*</span><input type="text" id="city" name="city" required></label></div>
                 <div><label for="day">Meeting Day<span class="required">*</span></label></div>
                 <select id="day" name="day" required>
                     <option selected disabled value="">Select a Day...</option>
@@ -64,7 +69,7 @@
                 <label for="3rd"><input id="3rd" type="checkbox" name="3rd" value="3rd">3rd</label>
                 <label for="4th"><input id="4th" type="checkbox" name="4th" value="4th">4th</label>
                 <label for="every"><input id="every" type="checkbox" name="every" value="every">Every</label>
-                <div>Time<span class="required">*</span><label for="time"><input type="time" id="time" name="time"></label></div>
+                <div><label for="time">Time<span class="required">*</span><input type="time" id="time" name="time"></label></div>
         </fieldset>
         <fieldset>
             <legend>Help Needed</legend>

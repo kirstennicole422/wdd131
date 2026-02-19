@@ -4,16 +4,23 @@
         justify-content: center;
         width: 33vw;
     }
-    
+
     nav {
-        display: flex;
         width: 100%;
     }
     
+    .nav-menu {
+        display: flex;
+    }
+
     .open {
-        border:none;
+        border: none;
         border: 3px solid var(--deep-green);
-    
+
+    }
+
+    .hamburger-button {
+        display: none;
     }
 
     .region-card {
