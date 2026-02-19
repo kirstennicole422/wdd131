@@ -80,51 +80,51 @@ const meetings = [
     {
         region: "Western Colorado",
         city: "Parachute",
-        eventDate: "",
-        time: "",
-        location: "",
+        eventDate: "Last Saturday of the month",
+        time: "3:00PM",
+        location: "Parachute Branch Library",
     },
     {
         region: "Colorado Springs Metro Area",
         city: "Colorado Springs",
-        eventDate: "",
-        time: "",
-        location: "",
+        eventDate: "2nd and 4th Mondays",
+        time: "5:45PM",
+        location: "UCCS University Center Main Lobby",
     },
     {
         region: "Colorado Springs Metro Area",
         city: "Monument",
-        eventDate: "March 1, 2026",
-        time: "10:00 Am",
-        location: "",
+        eventDate: "1st day of the month",
+        time: "10:00AM",
+        location: "Pikes Peak Library District",
     },
     {
         region: "Colorado Springs Metro Area",
         city: "Manitou Springs",
-        eventDate: "March 12, 2026",
-        time: "",
-        location: "",
+        eventDate: "2nd Wednesday of the month",
+        time: "8:00PM",
+        location: "Carnegie Library",
     },
     {
         region: "Colorado Springs Metro Area",
         city: "Fountain",
-        eventDate: "February 22, 2026",
-        time: "",
-        location: "",
+        eventDate: "3rd Friday of the month",
+        time: "4:30PM",
+        location: "Metcalfe Park",
     },
     {
         region: "Southern Colorado",
         city: "Pueblo",
-        eventDate: "February 29, 2026",
-        time: "",
-        location: "",
+        eventDate: "4th Tuesday of the Month",
+        time: "2:00PM",
+        location: "CSU Pueblo Bookstore",
     },
     {
         region: "Southern Colorado",
         city: "Salida",
-        eventDate: "February 21, 2026",
-        time: "",
-        location: "",
+        eventDate: "1st and 4th Sundays",
+        time: "9:00AM",
+        location: "Salida Regional Library",
     }
 ];
 
@@ -184,16 +184,3 @@ function createRegionCards() {
 }
 
 createRegionCards();
-
-
-
-// make html form css
-//check html overview
-//check css overview
-//check lighthouse
-//check dev tools css overview
-//check for css repeat declarations
-//add details to event cards
-//make footer stay at bottom of page
-// make hamburger menu do the thing include document.geteventlistener('click')
-// sort out hero image
