@@ -62,10 +62,6 @@ nav a {
     border: 3px solid var(--pale-blue);
 }
 
-nav {
-    background-color: red;
-}
-
 nav a:visited {
     color: var(--pale-blue);
 }
