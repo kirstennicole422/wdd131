@@ -122,3 +122,67 @@ header {
     color: blue;
     background-color: black;
 }
+
+
+
+
+
+
+input, select, textarea {
+    box-sizing: border-box;
+    width: 100%;
+}
+
+label, fieldset {
+    display: block;
+}
+
+fieldset {
+    margin-top: 20px;
+}
+
+div {
+    padding-top: 30px;
+}
+
+.required {
+    color: darkred;
+}
+
+#fname, #lname, #phone, #email, #region-name, #day, #time, #city,
+#date, #support, #question-comment {
+    min-height: 44px;
+    /* width: 100%; */
+    min-width: 300px;
+    background-color: var(--pale-blue);
+    color: var(--deep-green);
+    border: 1px solid var(--deep-green);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+#question-comment, #support {
+    width: 300px;
+}
+
+/* .review-conf {
+    text-align: center;
+    color: var(--deep-green);
+} */
+
+input[type="submit"] {
+    padding: 10px;
+    width: 100%;
+    margin: 10px 0 10px 0px;
+    color: var(--pale-blue);
+    border-radius: 10px;
+    background-color: var(--blue);
+
+
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    height: 20px;
+    width: 20px;
+}

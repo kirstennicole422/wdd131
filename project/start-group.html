@@ -11,6 +11,7 @@
     <script src="scripts/start-group.js" defer></script>
     <link rel="stylesheet" href="styles/colorado-crochets.css">
     <link rel="stylesheet" href="styles/colorado-crochets-large.css">
+
     <title>Start a Group | Colorado Crochets | Kirsten Stockwell | WDD131</title>
 </head>
 
@@ -24,7 +25,7 @@
         </nav>
     </header>
     <main>
-        <form method="get" action="confirmation.html" class="">
+        <form method="get" action="confirmation.html" class="start-group-form">
         <fieldset>
             <legend>Contact Information</legend>
             <div><label for="fname">First Name<span class="required">*</span><input type="text" id="fname" name="fname" required></label></div>
@@ -34,7 +35,7 @@
                 Me</label>
             <label for="call"><input id="call" type="checkbox" name="call" value="call">Call
                 Me</label>
-            <div><label for="email">Email<span class="required">*</span><input type="email" id="email" name="email" required></label></div>
+            <div>Email<span class="required">*</span><label for="email"><input type="email" id="email" name="email" required></label></div>
         </fieldset>
         <fieldset>
             <legend>About the Meeting</legend>
@@ -42,7 +43,7 @@
                 <select id="region-name" name="region-name" required>
                     <option selected disabled value="">Select a Region...</option>
                 </select>
-                <div><label for="city">City<span class="required">*</span><input type="text" id="city" name="city" required></label></div>
+                <div>City<span class="required">*</span><label for="city"><input type="text" id="city" name="city" required></label></div>
                 <div class="frequency">Frequency</div>
                 <label for="1st"><input id="1st" type="checkbox" name="1st" value="1st">1st</label>
                 <label for="2nd"><input id="2nd" type="checkbox" name="2nd" value="2nd">2nd</label>
@@ -60,7 +61,7 @@
                     <option value="Friday">Friday</option>
                     <option value="Saturday">Saturday</option>
                 </select>
-                <div><label for="time">Time<input type="text" id="time" name="time"></label></div>
+                <div>Time<span class="required">*</span><label for="time"><input type="time" id="time" name="time"></label></div>
         </fieldset>
         <fieldset>
             <legend>Help Needed</legend>
@@ -74,11 +75,11 @@
             <label for="no-location"><input id="no-location" type="radio" name="location" value="no-location" required>I don't have a location and I need help</label>
             <div><label for="support">What support do you need?</label><textarea id="support" name="support"></textarea>
             </div>
-            <div><label for="question-comment">Questions/Concerns/Comments</label><textarea id="question-comment" name="question-coment"></textarea>
+            <div><label for="question-comment">Questions/Concerns/Comments</label><textarea id="question-comment" name="question-comment"></textarea>
             </div>
         </fieldset>
 
-        <input type="submit" value="Apply to Start My Group">
+        <input type="submit" value="Propose New Group">
         </form>
     </main>
 
