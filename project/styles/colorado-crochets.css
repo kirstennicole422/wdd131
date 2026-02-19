@@ -33,7 +33,7 @@ nav a:visited {
 }
 
 .open {
-    font-size: 30px;
+    font-size: 25px;
     background-color: var(--deep-green);
     color: var(--pale-blue);
 }
@@ -53,12 +53,14 @@ header {
 }
 
 .groups {
+    margin: 0;;
+    width: 100%;
     border: 3px solid var(--deep-green);
 }
 
 .region-card {
     border: 1px dotted var(--blue);
-    margin: 10px;
+    margin: 10px 0;
     background-color: pink;
     display: grid;
     grid-template-columns: 1fr;
@@ -84,4 +86,32 @@ header {
     grid-column: 1 / -1;
     text-align: center;
     background-color: yellow;;
+}
+
+.home{
+    display: flex;
+}
+
+.hero-head{
+    position: relative;
+}
+
+.hero-p{
+    position: relative;
+    top: 200px;
+    left: 500px;
+}
+
+.hero img, .hero src {
+    /* position: relative; */
+}
+
+.hero {
+    width: 100%;
+    left: 0;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
 }

@@ -1,3 +1,4 @@
+// array of objects
 const meetings = [
     {
         region: "Northern Colorado",
@@ -143,9 +144,6 @@ const meetings = [
     }
 ];
 
-    
-
-
 function createRegionList() {
     let i = 0;
     let regions = []
@@ -158,20 +156,7 @@ function createRegionList() {
     return regions;
 }
 
-let groups = document.querySelector(".groups");
-let regionList = createRegionList();
-
-let j = 0;
-while (j < regionList.length) {
-    let regionCard = document.createElement("div");
-    regionCard.classList = "region-card"
-    groups.append(regionCard);
-
-    let region = document.createElement("h2");
-    region.classList = "region";
-    region.innerHTML = regionList[j];
-    regionCard.append(region);
-    
+function createLocationCards(j, regionCard) { 
     let k = 0;
     while (k < meetings.length) {
         if (meetings[k].region == regionList[j]) {
@@ -183,7 +168,7 @@ while (j < regionList.length) {
             city.classList = "city";
             city.innerHTML = meetings[k].city;
             card.append(city);
-        
+            
             let eventDate = document.createElement("p");
             eventDate.classList = "date"
             eventDate.innerHTML = `Date: ${meetings[k].eventDate}`;
@@ -201,5 +186,37 @@ while (j < regionList.length) {
         }
         k++;
     }
-    j++
 }
+
+function createRegionCards() {
+    let j = 0;
+    while (j < regionList.length) {
+        let regionCard = document.createElement("div");
+        regionCard.classList = "region-card"
+        groups.append(regionCard);
+        
+        let region = document.createElement("h2");
+        region.classList = "region";
+        region.innerHTML = regionList[j];
+        regionCard.append(region);
+        createLocationCards(j, regionCard);
+        j++
+    }
+}
+
+let groups = document.querySelector(".groups");
+let regionList = createRegionList();
+createRegionCards();
+
+// add form click event listener
+// make html form
+//make form thanks page
+//check html overview
+//check css overview
+//check lighthouse
+//check dev tools css overview
+//add local storage occurance
+//check for css repeat declarations
+//add details to event cards
+//make footer stay at bottom of page
+// make hamburger menu do the thing

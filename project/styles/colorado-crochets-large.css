@@ -1,17 +1,19 @@
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 600px) {
     nav a {
         text-align: center;
         justify-content: center;
-        width: 25%;
+        width: 33vw;
     }
-
+    
     nav {
         display: flex;
         width: 100%;
     }
-
+    
     .open {
+        border:none;
         border: 3px solid var(--deep-green);
+    
     }
 
     .region-card {
