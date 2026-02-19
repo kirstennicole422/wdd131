@@ -188,7 +188,6 @@ createRegionCards();
 
 
 // make html form css
-//make form thanks page
 //check html overview
 //check css overview
 //check lighthouse
@@ -198,4 +197,3 @@ createRegionCards();
 //make footer stay at bottom of page
 // make hamburger menu do the thing include document.geteventlistener('click')
 // sort out hero image
-// form labels and values fix
