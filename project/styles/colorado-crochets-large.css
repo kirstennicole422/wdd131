@@ -16,7 +16,6 @@
     .open {
         border: none;
         border: 3px solid var(--deep-green);
-
     }
 
     .hamburger-button {
@@ -26,4 +25,8 @@
     .region-card {
         grid-template-columns: 1fr 1fr 1fr;
     }
+
+        main {
+            margin: 150px 0;
+        }
 }
