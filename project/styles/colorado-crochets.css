@@ -4,20 +4,24 @@
     --pale-blue: #F0FFFF;
     /* --blue: #7DAEEB; */
     --blue: #2E5788;
-
     --clear-blue: #F0FFFFBB;
     --small-font: 18px;
     --medium-font: 28px;
     --large-font: 38px;
+    --main-font: Roboto, Arial,sans-serif;
+    --accent-font: Delius, Arial, sans-serif;
     font-size: var(--small-font);
     color: var(--deep-green);
     background-color: var(--pale-blue);
-    font-family: Delius, Arial, sans-serif;
+    font-family: var(--main-font);
+}
+
+h1, h2, h3, nav, legend {
+    font-family: var(--accent-font);
 }
 
 nav a {
     display: flex;
-    /* width: 300px; */
     height: 40px;
     background-color: var(--blue);
     text-align: center;
