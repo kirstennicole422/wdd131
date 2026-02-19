@@ -8,7 +8,7 @@
     --small-font: 18px;
     --medium-font: 28px;
     --large-font: 38px;
-    --main-font: Roboto, Arial,sans-serif;
+    --main-font: Roboto, Arial, sans-serif;
     --accent-font: Delius, Arial, sans-serif;
     font-size: var(--small-font);
     color: var(--deep-green);
@@ -16,11 +16,13 @@
     font-family: var(--main-font);
 }
 
-h1, h2, h3, nav, legend {
+h1,
+h2,
+h3,
+nav,
+legend {
     font-family: var(--accent-font);
 }
-
-
 
 .nav-menu {
     display: none;
@@ -30,11 +32,8 @@ h1, h2, h3, nav, legend {
 .open-menu {
     display: contents;
     position: relative;
-        margin-top: 30px;
+    margin-top: 30px;
     
-    /* right: 10px; */
-    /* display: contents; */
-
 }
 
 button {
@@ -44,9 +43,6 @@ button {
     position: fixed;
     right: 10px;
     padding: 10px;
-    /* top: 50px; */
-    /* color: red;
-    background-color: pink; */
 }
 
 nav a {
@@ -75,30 +71,23 @@ nav a:visited {
     color: var(--pale-blue);
 }
 
-footer {
+header {
     text-align: center;
     background-color: var(--deep-green);
     color: var(--pale-blue);
-    padding: 1px;
-}
-
-header {
-    text-align: center;
-        /* background-color: var(--deep-green); */
-        /* color: var(--pale-blue); */
-        padding: 10px 0px;
+    position: fixed;
+    inset: 0 0 auto 0;
+    margin-bottom: 10px;
+    width: 100;
+    border: 3px solid var(--pale-blue);
 }
 
 .groups {
-    margin: 0;;
     width: 100%;
-    /* border: 3px solid var(--deep-green); */
 }
 
 .region-card {
-    /* border: 1px dotted var(--blue); */
     margin: 10px 0;
-    /* background-color: pink; */
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 10px;
@@ -108,7 +97,6 @@ header {
 
 .card {
     padding: 10px;
-    /* border: 3px solid red; */
     border-radius: 10px;
     display: block;
     text-align: left;
@@ -121,25 +109,23 @@ header {
     text-align: center;
 }
 
-
 .city {
     grid-column: 1 / -1;
     text-align: center;
     background-color: var(--pale-blue);
     padding: 10px;
-    /* border: 1px solid var(--med-green); */
     color: var(--deep-green);
 }
 
-.home{
+.home {
     display: flex;
 }
 
-.hero-head{
+.hero-head {
     position: relative;
 }
 
-.hero-p{
+.hero-p {
     position: relative;
     top: 200px;
     left: 500px;
@@ -160,16 +146,6 @@ header {
     padding: 20px;
     text-decoration: none;
 }
-
-.start-group:hover, .start-group:active {
-    color: blue;
-    background-color: black;
-}
-
-
-
-
-
 
 input, select, .textarea {
     box-sizing: border-box;
@@ -196,10 +172,12 @@ div {
     color: darkred;
 }
 
-#fname, #lname, #phone, #email, #region-name, #day, #time, #city,
-#date, #support, #question-comment {
+#fname, #lname,
+#phone, #email,
+#region-name, #city,
+#day, #time, #date,
+#support, #question-comment {
     min-height: 44px;
-    /* width: 100%; */
     min-width: 300px;
     background-color: var(--pale-blue);
     color: var(--deep-green);
@@ -208,14 +186,10 @@ div {
     padding: 10px;
 }
 
-#question-comment, #support {
+#question-comment,
+#support {
     width: 300px;
 }
-
-/* .review-conf {
-    text-align: center;
-    color: var(--deep-green);
-} */
 
 input[type="submit"] {
     padding: 10px;
@@ -224,12 +198,24 @@ input[type="submit"] {
     color: var(--pale-blue);
     border-radius: 10px;
     background-color: var(--blue);
-
-
 }
 
 input[type="radio"],
 input[type="checkbox"] {
     height: 20px;
     width: 20px;
+}
+
+footer {
+    text-align: center;
+    background-color: var(--deep-green);
+    color: var(--pale-blue);
+    padding: 1px;
+    /* sticky footer */
+    position: fixed;
+    inset: auto 0 0 0;
+}
+
+main {
+    margin: 150px 0;
 }
