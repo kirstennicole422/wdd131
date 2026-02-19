@@ -24,68 +24,62 @@
         </nav>
     </header>
     <main>
+        <form method="get" action="confirmation.html" class="">
         <fieldset>
-            <legend>About You</legend>
-            <div><label for="user">First Name<input type="text" id="user" name="user"></label></div>
-            <div><label for="user">Last Name<input type="text" id="user" name="user"></label></div>
-            <div><label for="user">Phone Number<input type="text" id="user" name="user"></label></div>
-            <label for="durability"><input id="durability" type="checkbox" name="features" value="durability">Text
+            <legend>Contact Information</legend>
+            <div><label for="fname">First Name<span class="required">*</span><input type="text" id="fname" name="fname" required></label></div>
+            <div><label for="lname">Last Name<input type="text" id="lname" name="lname"></label></div>
+            <div><label for="phone">Phone Number<span class="required">*</span><input type="tel" id="phone" name="phone" required></label></div>
+            <label for="text"><input id="text" type="checkbox" name="text" value="text">Text
                 Me</label>
-            <label for="durability"><input id="durability" type="checkbox" name="features" value="durability">Call
+            <label for="call"><input id="cal"l type="checkbox" name="call" value="call">Call
                 Me</label>
-            <div><label for="user">Email<input type="text" id="user" name="user"></label></div>
+            <div><label for="email">Email<span class="required">*</span><input type="email" id="email" name="email" required></label></div>
         </fieldset>
         <fieldset>
             <legend>About the Meeting</legend>
-            <form method="get" action="confirmation.html" class="">
                 <div><label for="region-name">Region Name<span class="required">*</span></label></div>
-                <select id="region-name" name="fish" required>
+                <select id="region-name" name="region-name" required>
                     <option selected disabled value="">Select a Region...</option>
                 </select>
-                <div><label for="user">City<input type="text" id="user" name="user"></label></div>
-                <div class="features">Frequency</div>
-                <label for="durability"><input id="durability" type="checkbox" name="features"
-                        value="durability">1st</label>
-                <label for="ease"><input id="ease" type="checkbox" name="features" value="ease">2nd</label>
-                <label for="performance"><input id="performance" type="checkbox" name="features"
-                        value="performance">3rd</label>
-                <label for="design"><input id="design" type="checkbox" name="features" value="design">4th</label>
-                <label for="design"><input id="design" type="checkbox" name="features" value="design">Every</label>
-                <!-- <label for="design"><input id="design" type="checkbox" name="features" value="design">Every</label> -->
-                <div><label for="region-name">Meeting Day<span class="required">*</span></label></div>
-                <select id="region-name" name="fish" required>
+                <div><label for="city">City<span class="required">*</span><input type="text" id="city" name="city" required></label></div>
+                <div class="frequency" required>Frequency</div>
+                <label for="1st"><input id="1st" type="checkbox" name="1st" value="1st">1st</label>
+                <label for="2nd"><input id="2nd" type="checkbox" name="2nd" value="2nd">2nd</label>
+                <label for="3rd"><input id="3rd" type="checkbox" name="3rd"value="3rd">3rd</label>
+                <label for="4th"><input id="4th" type="checkbox" name="4th" value="4th">4th</label>
+                <label for="every"><input id="every" type="checkbox" name="every" value="every">Every</label>
+                <div><label for="day">Meeting Day<span class="required">*</span></label></div>
+                <select id="day" name="day" required>
                     <option selected disabled value="">Select a Day...</option>
-                    <option value="">Sunday</option>
-                    <option value="">Monday</option>
-                    <option value="">Tuesday</option>
-                    <option value="">Wednesday</option>
-                    <option value="">Thursday</option>
-                    <option value="">Friday</option>
-                    <option value="">Saturday</option>
+                    <option value="Sunday">Sunday</option>
+                    <option value="Monday">Monday</option>
+                    <option value="Tuesday">Tuesday</option>
+                    <option value="Wednesday">Wednesday</option>
+                    <option value="Thursday">Thursday</option>
+                    <option value="Friday">Friday</option>
+                    <option value="Saturday">Saturday</option>
                 </select>
-                <div><label for="user">Time<input type="text" id="user" name="user"></label></div>
+                <div><label for="time">Time<input type="text" id="time" name="time"></label></div>
         </fieldset>
         <fieldset>
             <legend>Help Needed</legend>
             <div>Public Location for Meetup?<span class="required">*</span></div>
-            <label for="1star"><input id="1star" type="radio" name="rating" value="1" required>I have a location
+            <label for="location-set"><input id="location-set" type="radio" name="location" value="location-set" required>I have a location
                 arranged</label>
-            <label for="1star"><input id="1star" type="radio" name="rating" value="1" required>I have a location in mind
+            <label for="location-pending"><input id="location-pending" type="radio" name="location" value="location-pending" required>I have a location in mind
                 but need to finalize it</label>
-            <label for="2star"><input id="2star" type="radio" name="rating" value="2" required>I don't have a
+            <label for="location-tbd"><input id="location-tbd" type="radio" name="location" value="location-tbd" required>I don't have a
                 location yet but I can figure it out</label>
-            <label for="2star"><input id="2star" type="radio" name="rating" value="2" required>I need help arranging a
+            <label for="no-location"><input id="no-location" type="radio" name="location" value="no-location" required>I need help arranging a
                 location</label>
-            <div><label for="review">What support do you need?</label><textarea id="review" name="review"></textarea>
+            <div><label for="support">What support do you need?</label><textarea id="support" name="support"></textarea>
             </div>
-            <div><label for="review">Questions/Concerns/Comments</label><textarea id="review" name="review"></textarea>
+            <div><label for="question-comment">Questions/Concerns/Comments</label><textarea id="question-comment" name="question-coment"></textarea>
             </div>
-
         </fieldset>
-        <div><label for="date">Date of Installation<span class="required">*</span><input id="date" type="date"
-                    name="date" required></label></div>
 
-        <input type="submit" value="Start My Group">
+        <input type="submit" value="Apply to Start My Group">
         </form>
     </main>
 
