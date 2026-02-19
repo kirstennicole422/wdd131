@@ -3,88 +3,79 @@ const meetings = [
     {
         region: "Northern Colorado",
         city: "Fort Collins",
-        eventDate: "Dec 2",
-        time: "3",
-        location: "2",
+        eventDate: "1st Tuesday of the month",
+        time: "6:00PM",
+        location: "Old Town Library",
     },
     {
         region: "Northern Colorado",
         city: "Loveland",
-        eventDate: "2",
-        time: "5",
-        location: "8",
+        eventDate: "3rd Saturday of the month",
+        time: "3:00PM",
+        location: "Loveland Public Library",
     },
     {
         region: "Northern Colorado",
         city: "Greeley",
-        eventDate: "e",
-        time: "",
-        location: "",
-        contact: "",
+        eventDate: "1st of the month",
+        time: "12:00PM",
+        location: "UNC Student Center Lobby",
     },
     {
         region: "Northern Colorado",
         city: "Boulder",
-        eventDate: "r",
-        time: "",
-        location: "",
-        contact: "",
+        eventDate: "2nd Wednesday of the month",
+        time: "5:30PM",
+        location: "Norlin Library at CU Boulder",
     },
     {
         region: "Denver Metro Area",
         city: "Broomfield",
-        eventDate: "e",
-        time: "",
-        location: "",
-        contact: "",
+        eventDate: "4th Thursday of the month",
+        time: "3:00PM",
+        location: "Broomfield Library",
     },
     {
         region: "Denver Metro Area",
         city: "Denver",
-        eventDate: "",
-        time: "",
-        location: "",
-        contact: "",
+        eventDate: "Every Sunday, weather permitting",
+        time: "2:00PM",
+        location: "Tivoli Quad (CU Denver)",
     },
     {
         region: "Denver Metro Area",
         city: "Parker",
-        eventDate: "",
-        time: "",
-        location: "",
-        contact: "",
+        eventDate: "2nd Saturday of the month",
+        time: "1:30PM",
+        location: "Parker Library",
     },
     {
         region: "Denver Metro Area",
         city: "Littleton",
-        eventDate: "",
-        time: "",
-        location: "",
-        contact: "",
+        eventDate: "Every Friday June-August",
+        time: "7:30PM",
+        location: "Robert F Clement Park",
     },
     {
         region: "Denver Metro Area",
         city: "Aurora",
-        eventDate: "",
-        time: "",
-        location: "",
-        contact: "",
+        eventDate: "Every Wednesday",
+        time: "2:15PM",
+        location: "Aurora Library",
     },
     {
         region: "Western Colorado",
         city: "Rifle",
-        eventDate: "",
-        time: "",
-        location: "",
-        contact: "",
+        eventDate: "1st and 3rd Tuesdays",
+        time: "11:00AM",
+        location: "Garfield County Library - Rifle Branch",
     },
     {
         region: "Western Colorado",
         city: "Grand Junction",
-        eventDate: "",
-        time: "",
-        location: "",
-        contact: "",
+        eventDate: "2nd Thursday of the month",
+        time: "6:00PM",
+        location: "University Center at CMU",
     },
     {
         region: "Western Colorado",
@@ -92,7 +83,6 @@ const meetings = [
         eventDate: "",
         time: "",
         location: "",
-        contact: "",
     },
     {
         region: "Colorado Springs Metro Area",
@@ -100,61 +90,49 @@ const meetings = [
         eventDate: "",
         time: "",
         location: "",
-        contact: "",
     },
     {
         region: "Colorado Springs Metro Area",
         city: "Monument",
-        eventDate: "",
-        time: "",
+        eventDate: "March 1, 2026",
+        time: "10:00 Am",
         location: "",
-        contact: "",
     },
     {
         region: "Colorado Springs Metro Area",
         city: "Manitou Springs",
-        eventDate: "",
+        eventDate: "March 12, 2026",
         time: "",
         location: "",
-        contact: "",
     },
     {
         region: "Colorado Springs Metro Area",
         city: "Fountain",
-        eventDate: "Feb 22",
+        eventDate: "February 22, 2026",
         time: "",
         location: "",
-        contact: "",
     },
     {
         region: "Southern Colorado",
         city: "Pueblo",
-        eventDate: "Feb 29",
+        eventDate: "February 29, 2026",
         time: "",
         location: "",
-        contact: "",
     },
     {
         region: "Southern Colorado",
         city: "Salida",
-        eventDate: "Feb 21",
+        eventDate: "February 21, 2026",
         time: "",
         location: "",
-        contact: "",
     }
 ];
 
-function createRegionList() {
-    let i = 0;
-    let regions = []
-    while (i < meetings.length) {
-        if (!regions.includes(meetings[i].region)){
-            regions.push(meetings[i].region);
-        }
-        i++
-    }
-    return regions;
-}
+let groups = document.querySelector(".groups");
+let regionList = createRegionList();
+
+let regions = JSON.parse(localStorage.getItem("regions"));
+
 
 function createLocationCards(j, regionCard) { 
     let k = 0;
@@ -199,24 +177,24 @@ function createRegionCards() {
         region.classList = "region";
         region.innerHTML = regionList[j];
         regionCard.append(region);
+
         createLocationCards(j, regionCard);
         j++
     }
 }
 
-let groups = document.querySelector(".groups");
-let regionList = createRegionList();
 createRegionCards();
 
-// add form click event listener
-// make html form
+
+
+// make html form css
 //make form thanks page
 //check html overview
 //check css overview
 //check lighthouse
 //check dev tools css overview
-//add local storage occurance
 //check for css repeat declarations
 //add details to event cards
 //make footer stay at bottom of page
-// make hamburger menu do the thing
+// make hamburger menu do the thing include document.geteventlistener('click')
+// sort out hero image

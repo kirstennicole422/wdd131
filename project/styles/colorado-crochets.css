@@ -102,10 +102,6 @@ header {
     left: 500px;
 }
 
-.hero img, .hero src {
-    /* position: relative; */
-}
-
 .hero {
     width: 100%;
     left: 0;
@@ -114,4 +110,15 @@ header {
 .hero img {
     width: 100%;
     height: auto;
+}
+
+.start-group {
+    background-color: red;
+    padding: 20px;
+    text-decoration: none;
+}
+
+.start-group:hover, .start-group:active {
+    color: blue;
+    background-color: black;
 }
