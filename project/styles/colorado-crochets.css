@@ -79,7 +79,6 @@ header {
     position: fixed;
     inset: 0 0 auto 0;
     margin-bottom: 10px;
-    width: 100;
     border-bottom: 3px solid var(--pale-blue);
 }
 
