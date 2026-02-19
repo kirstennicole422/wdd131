@@ -7,7 +7,7 @@ while (z < regionList.length) {
     newOption.value = regionList[z];
     newOption.className = "option";
     newOption.innerHTML = regionList[z];
-    console.log(`this is iteration ${z}`);
+    // console.log(`this is iteration ${z}`);
     document.querySelector("#region-name").append(newOption);
     z++;
 };
